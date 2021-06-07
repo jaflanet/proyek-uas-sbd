@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Navbar, Footer } from './components';
-import { login } from './pages';
+import { login_pages } from './pages';
 
 function App() {
   const [navbar, setNavbar] = useState(false)
@@ -16,6 +16,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <login_pages />
       <button type="button" onClick={() => setNavbar(!navbar)}>anak lonte</button>
       <Footer />
     </>
