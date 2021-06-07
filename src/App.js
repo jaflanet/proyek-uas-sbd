@@ -1,12 +1,12 @@
 import React from 'react';
-import { Login_pages,Home_pages } from './pages';
+import { LoginPages,HomePages } from './pages';
 
 function App() {
 
 
     return(
       <>
-      <Login_pages/>
+      <LoginPages/>
       </>
     )
   }
