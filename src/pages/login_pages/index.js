@@ -1,11 +1,11 @@
 import React from 'react'
-import { login } from '../../component'
-const index = () => {
+import { Login } from '../../component'
+const Login_pages = () => {
     return (
        <> 
-       <login />
+       <Login />
        </>
     )
 }
 
-export default index
+export default Login_pages

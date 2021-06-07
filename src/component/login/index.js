@@ -1,10 +1,11 @@
 import React from 'react'
-import FMLogo from "../../assets/Component_1.png"
+import FMLogo from "../../assets/Login_page/Component_1.png"
 import "./index.css"
 
-const login = () => {
+const Login = () => {
     return (
-        <span>
+        <><div className="Container">
+            <div className="Wrapper">
             <div class="split left">
                 <div class="centered">
                     <span className="LOGO_FM">
@@ -40,8 +41,10 @@ const login = () => {
             <div className="aboutUs">
                 about us
             </div>
-        </span>
+            </div>
+        </div>
+        </>
     )
 }
 
-export default login;
+export default Login;

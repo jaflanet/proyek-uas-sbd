@@ -1,1 +1,1 @@
-export { default as login_pages } from './login_pages'
+export { default as Login_pages } from './Login_pages'

@@ -128,7 +128,7 @@ form .txt_field{
 }
 
 .Wrapper{
-  background-image: url(${bgImg});
+  background-image: url("../../assets/Login_page/Frame_1.png");
   background-position: center;
   background-size: cover;
   width: 100%;
