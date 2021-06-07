@@ -1,5 +1,5 @@
 import React from 'react'
-import FMLogo from "../../assets/Login_page/Component_1.png"
+import FMLogo from "../../assets/LoginAsset/Component_1.png"
 import "./index.css"
 
 const Login = () => {
