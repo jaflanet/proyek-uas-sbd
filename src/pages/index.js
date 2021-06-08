@@ -1,2 +1,5 @@
 export { default as LoginPages } from './LoginPages'
 export { default as HomePages } from './HomePages'
+export { default as HomeValoPages } from './HomeValoPages'
+export { default as HomePUBGPages } from './HomePUBGPages'
+export { default as HomeMLPages } from './HomeMLPages'

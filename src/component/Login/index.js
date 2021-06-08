@@ -2,7 +2,7 @@ import React from 'react'
 import FMLogo from "../../assets/LoginAsset/Component_1.png"
 import "./index.css"
 
-const Login = () => {
+const Login = ({setLogin}) => {
     return (
         <><div className="Container">
             <div className="Wrapper">

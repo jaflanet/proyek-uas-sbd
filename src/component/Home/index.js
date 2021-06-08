@@ -5,7 +5,7 @@ function Home() {
     return(
       <>
       <div>
-      <div classname="Wrapper">
+      <div className="Wrapper">
           dsadasd
       </div>
       </div>

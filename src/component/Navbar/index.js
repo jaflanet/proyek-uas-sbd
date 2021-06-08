@@ -7,28 +7,31 @@ import {
   NavBtn,
   NavBtnLink
 } from './NavbarElement';
-
+import logo_web from '../../assets/NavbarAsset/logo_web_white.png'
+import logo_Valo from '../../assets/NavbarAsset/valo_logo_white.png'
+import logo_PUBG from '../../assets/NavbarAsset/pubg_logo_white.png'
+import logo_ML from '../../assets/NavbarAsset/ml_logo_white.png'
 const Navbar = () => {
   return (
     <>
       <Nav>
         <NavLink to='/'>
-        <input type="image" src="../../assets/NavbarAsset/logo_web_white.png" alt="submit" />
+        <img src={logo_web} alt='logo' />
         </NavLink>
         <Bars />
         <NavMenu>
-          <NavBtnLink to='/' activeStyle>
-          <input type="image" src="../../assets/NavbarAsset/logo_web_white.png" alt="submit" />
+          <NavBtnLink to='/HomeValoPages'>
+          <img src={logo_Valo} alt='Valo' />
           </NavBtnLink>
-          <NavBtnLink to='/' activeStyle>
-          <input type="image" src="../../assets/NavbarAsset/logo_web_white.png" alt="submit" />
+          <NavBtnLink to='/HomePUBGPages'>
+          <img src={logo_PUBG} alt='PUBG' />
           </NavBtnLink>
-          <NavBtnLink to='/' activeStyle>
-          <input type="image" src="../../assets/NavbarAsset/logo_web_white.png" alt="submit" />
+          <NavBtnLink to='/HomeMLPages'>
+          <img src={logo_ML} alt='ML' />
           </NavBtnLink>
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to='/'>Sign In</NavBtnLink>
+          <NavBtnLink to='/'>profil</NavBtnLink>
         </NavBtn>
       </Nav>
     </>
