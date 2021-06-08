@@ -1,8 +1,40 @@
-.Wrapper{
-    position: absolute;
-    background-color: black;
-    background-position: center;
+
+ .triangel{
+     position: fixed;
+     width: 60;
+     left: 800px;
+     bottom: 100px;
+
+ }
+
+ .fmlogo{
+    position: fixed;
+    bottom: 450px;
+    right: 450px; 
+    width: 1100px;
+    height: 400px; 
+ }
+
+
+ .rumah{
+    position: fixed;
+    background-image: url("../../assets/HomeAsset/image_15.png");
+    background-position:center;
     background-size: cover;
-    width: 1080px;
-    height: 1080px;
-  }
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+    
+ }
+
+.kotak{
+   position: absolute;
+   width: 1440px;
+   height: 1024px;
+   left: 0px;
+   top: 0px;
+
+   background: linear-gradient(261.91deg, rgba(19, 21, 32, 0.78) 44.16%, rgba(70, 162, 158, 0.78) 95.71%);
+   mix-blend-mode: normal;
+}
