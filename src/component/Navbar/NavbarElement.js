@@ -80,7 +80,7 @@ export const NavBtnLink = styled(Link)`
   /* Second Nav */
   margin-left: 24px;
   &:hover {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
     background: black;
     color: #010606;
   }
