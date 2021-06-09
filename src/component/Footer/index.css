@@ -1,0 +1,27 @@
+.main-footer{
+    color:white;
+    background-color: #46A29E;
+    font-size: 18pt;
+    font-weight: 400;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    display :flex;
+    flex-direction: column;
+}
+
+.col1{
+    width: auto;
+}
+
+.col2{
+    width: auto;
+}
+
+.col3{
+    width: auto;
+}
+
+.row{
+    display: flex;
+}

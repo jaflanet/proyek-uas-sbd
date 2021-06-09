@@ -1,5 +1,7 @@
 import React,{useState} from 'react';
+import './App.css'
 import {Navbar} from './component'
+import {Footer} from './component'
 import { HomePages,
   HomeValoPages,
   HomePUBGPages,
@@ -53,17 +55,20 @@ if (ada === false){
 }
 else {
     return(
-      <>
-      <Router>
-      <Navbar />
-      <Switch>
-        <Route exact path="/" component={HomePages}/>
-        <Route exact path="/HomeValoPages" component={HomeValoPages}/> 
-        <Route exact path="/HomePUBGPages" component={HomePUBGPages}/> 
-        <Route exact path="/HomeMLPages" component={HomeMLPages}/> 
-      </Switch>
-      </Router>
-      </>
+        <div className="page-container">
+        <div className="content-wrap">
+            <Router>
+            <Navbar />
+            <Switch>
+            <Route exact path="/" component={HomePages}/>
+            <Route exact path="/HomeValoPages" component={HomeValoPages}/> 
+            <Route exact path="/HomePUBGPages" component={HomePUBGPages}/> 
+            <Route exact path="/HomeMLPages" component={HomeMLPages}/> 
+            </Switch>
+            <Footer /> 
+            </Router>
+        </div>
+        </div>
     )
 }
   }
