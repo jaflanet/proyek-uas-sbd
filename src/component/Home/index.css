@@ -53,21 +53,26 @@
   left: 100px;
 }
 .image-bottom{
-   height: 140%;
-   margin-right: 3%;
-   margin-top: -100px;
+   height: 125%;
+   margin-right: 20%;
+   margin-top: -140px;
 }
 
 .image-top{
-  height: 140%;
-  margin-right:30%;
-  margin-top: -60px;
+  height: 125%;
+  margin-right:45%;
+  margin-top: -55px;
 }
 
 .image-middle{
-  height: 140%;
-  margin-left: 38%;
-  margin-top: -80px;
+  height: 125%;
+  margin-left: 10%;
+  margin-top: -95px;
+}
+
+.image-logo{
+  margin-bottom: 20%;
+  height: 10%;
 }
 
 @keyframes gradient {
