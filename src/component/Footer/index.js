@@ -17,9 +17,15 @@ const Footer = () => {
                     </div>
                     {/*column 2 */}
                     <div className="col2">
-                    <img className="insta" src={instaLogo} alt="insta"/>
-                    <img className="twitter" src={twitterLogo} alt="twitter"/>
-                    <img className="twitch" src={twitchLogo} alt="twitch"/>
+                        <a href="https://instagram.com/omarmoch13/">
+                            <img className="insta" src={instaLogo} alt="insta"/>
+                        </a>
+                        <a href="https://twitter.com/javgrandpa">
+                            <img className="twitter" src={twitterLogo} alt="twitter"/>
+                        </a>
+                        <a href="https://www.twitch.tv/kyedae_">
+                            <img className="twitch" src={twitchLogo} alt="twitch"/>
+                        </a>
                     </div>
                     {/*column 3 */}
                     <div className="col3">

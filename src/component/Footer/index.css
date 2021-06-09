@@ -3,7 +3,6 @@
     background-color: #70aca8;
     font-size: 18pt;
     font-weight: 400;
-    position: absolute;
     bottom:0;
     height: 70pt;
     width: 100%;
@@ -20,6 +19,7 @@
     float:right;
     width: 33.33%;
     padding: 10px;
+    margin-top:20px;
 }
 
 .col3{
@@ -29,17 +29,47 @@
 }
 
 .tulisan-kecil{
-    position: absolute;
     margin-left: 175px;
     margin-top: 26px;
+    position: relative;
 }
 
 .logo-kecil{
-    position: absolute;
     margin-left: 400px;
     margin-top: 15px;
+    position: relative;
 }
 
 .row{
     display: flex;
+}
+
+.insta{
+    position: relative;
+    margin-left: -75px;
+}
+
+.twitter{
+    position: relative;
+    margin-left: 35px;
+}
+
+.twitch{
+    position: relative;
+    margin-left: 35px;
+}
+
+.insta:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.twitter:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.twitch:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
 }
