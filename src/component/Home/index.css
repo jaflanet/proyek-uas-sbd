@@ -23,12 +23,12 @@
    width: 100%;
  }
 .home-c1{
-   background-color:#fff;
-   opacity: 0.5;
-   height : 80px;
+   background-color:transparent;
+   opacity: 0.9;
+   height : 230px;
 }
  .home-column1{
-      background-color:#aaa;
+      background-color:transparent;
       vertical-align: middle;
       float: left;
       width: 50%;
@@ -36,7 +36,7 @@
  }
 
  .home-column2{
-   background-color:#bbb;
+   background-color: transparent;
    vertical-align: middle;
    float: right;
    width: 50%;
@@ -44,7 +44,7 @@
 }
 
 .home-columnfull{
-  background-color:#aaa;
+  background-color: transparent;
   justify-content: center;
   float: left;
   width: 100%;
