@@ -1,26 +1,43 @@
 .main-footer{
     color:white;
-    background-color: #46A29E;
+    background-color: #70aca8;
     font-size: 18pt;
     font-weight: 400;
     position: absolute;
     bottom:0;
     height: 70pt;
     width: 100%;
-    display :flex;
-    flex-direction: column;
 }
 
 .col1{
-    width: auto;
+    float:left;
+    width: 33.33%;
+    padding: 10px;
 }
 
 .col2{
-    width: auto;
+    margin-left: 20%;
+    float:right;
+    width: 33.33%;
+    padding: 10px;
 }
 
 .col3{
-    width: auto;
+    float:right;
+    width: 33.33%;
+    padding: 10px;
+}
+
+.tulisan-kecil{
+    position: absolute;
+    margin-left: 175px;
+    margin-top: 26px;
+}
+
+.logo-kecil{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 15px;
 }
 
 .row{
