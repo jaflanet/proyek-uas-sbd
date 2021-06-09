@@ -3,7 +3,6 @@
     background-color: #70aca8;
     font-size: 18pt;
     font-weight: 400;
-    position: absolute;
     bottom:0;
     width: 100%;
 }
@@ -29,15 +28,15 @@
 }
 
 .tulisan-kecil{
-    position: absolute;
     margin-left: 175px;
     margin-top: 26px;
+    position: relative;
 }
 
 .logo-kecil{
-    position: absolute;
     margin-left: 400px;
     margin-top: 15px;
+    position: relative;
 }
 
 .row{
