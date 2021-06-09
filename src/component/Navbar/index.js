@@ -11,12 +11,14 @@ import logo_web from '../../assets/NavbarAsset/logo_web_white.png'
 import logo_Valo from '../../assets/NavbarAsset/valo_logo_white.png'
 import logo_PUBG from '../../assets/NavbarAsset/pubg_logo_white.png'
 import logo_ML from '../../assets/NavbarAsset/ml_logo_white.png'
+import "./index.css"
+
 const Navbar = () => {
   return (
     <>
       <Nav>
         <NavLink to='/'>
-        <img src={logo_web} alt='logo' />
+        <img src={logo_web} alt='logo' className='logo-web'/>
         </NavLink>
         <Bars />
         <NavMenu>

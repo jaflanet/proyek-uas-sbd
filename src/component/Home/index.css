@@ -1,40 +1,72 @@
 
- .triangel{
-     position: fixed;
-     width: 60;
-     left: 800px;
-     bottom: 100px;
-
+ .container-home{
+   background-image: url("../../assets/HomeAsset/image_15.png");
+   background-position:center;
+   background-size: cover;
+   height:100%;
  }
 
- .fmlogo{
-    position: fixed;
-    bottom: 450px;
-    right: 450px; 
-    width: 1100px;
-    height: 400px; 
+ .gradient-ani{
+   position: relative;
+   text-align: center;
+   background: rgb(0,0,0);
+   background: linear-gradient(261.91deg, rgba(19, 21, 32, 0.8) 44.16%, rgba(70, 162, 158, 0.3) 95.71%);
+   background-size: 400% 400%;
+   animation: gradient 15s ease infinite;
  }
 
-
- .rumah{
-    position: fixed;
-    background-image: url("../../assets/HomeAsset/image_15.png");
-    background-position:center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    
-    
+ .home-row{
+   content: "";
+   display: table;
+   clear: both;
+   height:200px;
+   width: 100%;
+ }
+.home-c1{
+   background-color:#fff;
+   opacity: 0.5;
+   height : 80px;
+}
+ .home-column1{
+      background-color:#aaa;
+      vertical-align: middle;
+      float: left;
+      width: 50%;
+      height: 230px; /* Should be removed. Only for demonstration */
  }
 
-.kotak{
-   position: absolute;
-   width: 1440px;
-   height: 1024px;
-   left: 0px;
-   top: 0px;
+ .home-column2{
+   background-color:#bbb;
+   vertical-align: middle;
+   float: right;
+   width: 50%;
+   height: 230px; /* Should be removed. Only for demonstration */
+}
 
-   background: linear-gradient(261.91deg, rgba(19, 21, 32, 0.78) 44.16%, rgba(70, 162, 158, 0.78) 95.71%);
-   mix-blend-mode: normal;
+.home-columnfull{
+  background-color:#aaa;
+  justify-content: center;
+  float: left;
+  width: 100%;
+  height: 230px; /* Should be removed. Only for demonstration */
+}
+.image-size{
+   height: 125%;
+}
+
+.image-top{
+  height: 125%;
+  margin-right:0%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

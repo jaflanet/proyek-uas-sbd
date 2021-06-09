@@ -3,7 +3,7 @@ import {Navbar} from './component'
 import { HomePages,
   HomeValoPages,
   HomePUBGPages,
-  HomeMLPages } from './pages';
+  HomeMLPages} from './pages';
   import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function App() {
 const [ada,setAda] = useState(false)
@@ -55,7 +55,7 @@ else {
     return(
       <>
       <Router>
-      <Navbar/>
+      <Navbar />
       <Switch>
         <Route exact path="/" component={HomePages}/>
         <Route exact path="/HomeValoPages" component={HomeValoPages}/> 
