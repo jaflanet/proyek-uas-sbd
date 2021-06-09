@@ -21,7 +21,7 @@ function Home() {
         <div className="home-row">
         <div className="home-c1"> 
           <div className="home-column1">
-          <img src={gambar_tengah} alt='logo' className="image-size"/>
+          <img src={gambar_tengah} alt='logo' className="image-middle"/>
           </div>
           <div className="home-column2">
           <img src={logo_home} alt='logo' className="image-size"/>
@@ -32,7 +32,7 @@ function Home() {
         <div className="home-row">
         <div className="home-c1"> 
         <div className="home-columnfull">
-        <img src={gambar_bawah} alt='logo' className="image-size"/>
+        <img src={gambar_bawah} alt='logo' className="image-bottom"/>
          </div>
          </div>
       </div>

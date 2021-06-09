@@ -5,6 +5,7 @@
     font-weight: 400;
     position: absolute;
     bottom:0;
+    height: 70pt;
     width: 100%;
     display :flex;
     flex-direction: column;

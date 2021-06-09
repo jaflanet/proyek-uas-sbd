@@ -1,0 +1,83 @@
+.con-ML{
+    background-image: url("../../assets/HomeML/background.png");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    
+}
+.background-FM{
+    background-image: url("../../assets/HomeML/logo_back.png");
+    background-position: center;
+    background-size: cover;
+    height: 80%;
+    width: 60%;
+    margin-left: 20%;
+
+}
+
+
+.warna{
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: rgba(10, 12, 16, 0.9);
+    mix-blend-mode: normal;
+}
+.container-row{
+    display: table;
+    clear: both;
+    height: 200px;
+    width: 100%;
+}
+.profil{
+    background-color:transparent;
+    opacity: 0.9;
+    height : 230px;
+}
+.recentplayer{
+    float:left;
+    
+}
+.onlineplayer{
+    float: left;
+}
+.profilml{
+    margin-bottom: 0;
+    margin-right: 70%;
+}
+.player{
+    margin-top: 0;
+}
+.online{
+    margin-top: 0;
+}
+.data-profil1{
+    position: absolute;
+    top: 0;
+    left: 400px;
+ 
+ 
+}
+.data-profil2{
+    position: absolute;
+    bottom: 0 ;
+    left: 100px;
+    
+    
+}
+.data-profil3{
+    position: absolute;
+    top: 0;
+    left: 300px;
+
+}
+.tulisan{
+    font-size:12pt;
+    color:black;
+    padding-bottom: 45px;
+    font-weight: 800;
+}
