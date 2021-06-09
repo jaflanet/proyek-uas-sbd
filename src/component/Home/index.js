@@ -24,7 +24,7 @@ function Home() {
           <img src={gambar_tengah} alt='logo' className="image-middle"/>
           </div>
           <div className="home-column2">
-          <img src={logo_home} alt='logo' className="image-size"/>
+          <img src={logo_home} alt='logo' className="image-logo"/>
           </div>
         </div>
         </div>
