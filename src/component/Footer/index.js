@@ -9,7 +9,6 @@ import './index.css'
 const Footer = () => {
     return (
         <div className="main-footer">
-            <div className="container">
                 <div className="row">
                     {/*column 1*/}
                     <div className="col1">
@@ -33,7 +32,6 @@ const Footer = () => {
                         <img className="tulisan-kecil" src={tulisanKecil} alt="tulisankecil"/>
                     </div>
                 </div>
-            </div>
         </div>
     )
 }

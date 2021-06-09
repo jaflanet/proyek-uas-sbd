@@ -6,6 +6,10 @@
     bottom:0;
     height: 70pt;
     width: 100%;
+    height: 100px;
+    top: 95px;
+    position: relative;
+    margin-bottom: -20px;
 }
 
 .col1{
@@ -29,8 +33,8 @@
 }
 
 .tulisan-kecil{
+    top: -43px;
     margin-left: 175px;
-    margin-top: 26px;
     position: relative;
 }
 
@@ -42,6 +46,7 @@
 
 .row{
     display: flex;
+    height: 100px;
 }
 
 .insta{
