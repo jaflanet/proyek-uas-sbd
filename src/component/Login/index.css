@@ -1,11 +1,10 @@
 .LOGO_FM{
-
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.InfoText{
+  }
+  
+  .InfoText{
     margin:auto;
     text-align: center;
     justify-content: center;
@@ -13,9 +12,9 @@
     color: #FFFFFF;
     font-size: 24px;
     font-weight: 400;
-}
-
-.split{
+  }
+  
+  .split{
     height: 100%;
     width: 50%;
     position: fixed;
@@ -23,32 +22,31 @@
     top: 0;
     overflow-x: hidden;
     padding-top: 20px;
-}
-
-.centered{
+  }
+  
+  .centered{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-}
-
-.centered2{
+  }
+  
+  .centered2{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-}
-
-.left{
+  }
+  
+  .left{
     left:0;
-}
-
-.right{
+  }
+  
+  .right{
     right:0;
-}
-
-
-.LoginPop{
+  }
+  
+  .LoginPop{
     padding-top: 75px;
     padding-left: 45px;
     border-radius: 35px;
@@ -57,21 +55,21 @@
     background-color: rgba(102,252,240,0.78);
     font-size:23px;
     color:#FFFFFF;
-}
-
-.LoginPop h1{
+  }
+  
+  .LoginPop h1{
     font-size:60pt;
     color:#FFFFFF;
     padding-bottom: 45px;
-    font-weight: 800;
-}
-
-form .txt_field{
+    font-weight: 400;
+  }
+  
+  form .txt_field{
     position: relative;
     margin: 30px 0;
-}
-
-.txt_field input{
+  }
+  
+  .txt_field input{
     width : 495px;
     height : 70px;
     padding : 0px 15px;
@@ -79,9 +77,9 @@ form .txt_field{
     border:#ffffff;
     border-width: 20px;
     border-radius: 10px;
-}
-
-.txt_field label{
+  }
+  
+  .txt_field label{
     position: absolute;
     top: 65%;
     left: 400px;
@@ -90,48 +88,54 @@ form .txt_field{
     font-size: 20px;
     font-weight: 400;
     pointer-events: none;
-}
-
-.txt_field input:focus ~ label,
-.txt_field input:valid ~ label{
-    color:#757575;
+  }
+  
+  .txt_field input:focus ~ label,
+  .txt_field input:valid ~ label{
+    color:#585858;
     border-color: #757575;
-}
-
-.submitButton{
+  }
+  
+  .submitButton{
     position: relative;
     left: 437px;
-}
-
-.pass{
+  }
+  
+  .pass{
     position:relative;
     top: 90px;
     left: 7px;
-}
-
-.aboutUs{
-    position: relative;
-    left: 870px;
-    top: 890px;
+  }
+  
+  .aboutUs{
     font-size: 20pt;
     color: #FFFFFF;
-    opacity: 80%;
-}
-
-.Container{
+  }
+  
+  .Container{
   background: #EEFCFF;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-}
-
-.Wrapper{
-  background-image: url("../../assets/LoginAsset/Frame_1.png");
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
+  }
+  
+  .page-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .content-wrap{
+    flex: 1;
+  }
+  
+    .Wrapper{
+      background-image: url("../../assets/LoginAsset/Frame_1.png");
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }

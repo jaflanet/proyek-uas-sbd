@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
-import './App.css'
+import FMLogo from "./assets/LoginAsset/Component_1.png"
+import './component/Login/index.css'
 import {Navbar} from './component'
 import {Footer} from './component'
 import { HomePages,
@@ -16,8 +17,7 @@ if (ada === false){
             <div className="Wrapper">
             <div class="split left">
                 <div class="centered">
-                    <span className="LOGO_FM">
-                    </span>
+                <img src={FMLogo} alt ="logo awal"  className="LOGO_FM"/>
                     <span className="InfoText">
                         FINDMATES is an online third party website dedicated<br />
                         to help gamers find teamates, and maybe a soulmate too.
@@ -44,9 +44,6 @@ if (ada === false){
                         </form>
                     </div>
                 </div>
-            </div>
-            <div className="aboutUs">
-                about us
             </div>
             </div>
         </div>
