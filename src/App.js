@@ -52,8 +52,6 @@ if (ada === false){
 }
 else {
     return(
-        <div className="page-container">
-        <div className="content-wrap">
             <Router>
             <Navbar />
             <Switch>
@@ -64,8 +62,6 @@ else {
             </Switch>
             <Footer /> 
             </Router>
-        </div>
-        </div>
     )
 }
   }
