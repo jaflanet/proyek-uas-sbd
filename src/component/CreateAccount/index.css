@@ -1,0 +1,28 @@
+.background{
+    background-position: center ;
+    height: 50%;
+}
+.warna{
+    position: relative;
+
+    width: 300px;
+    height: 450px;
+    left: 550px;
+    top: -3px;
+    
+    background: linear-gradient(360deg, #46A29E 2.05%, #202733 50.88%, #0A0C10 96.97%);
+}
+.logofm{
+    height: 30%;
+    width: 60%;
+    margin-top: 5%;
+}
+.kotakgede{
+    width: 300px;
+    height: 400px;
+    margin-left: 0%;
+}
+.kotakkecil{
+    height: auto;
+    width: auto;
+}
