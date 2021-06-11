@@ -3,11 +3,8 @@ import FMLogo from "./assets/LoginAsset/Component_1.png"
 import './component/Login/index.css'
 import {Navbar} from './component'
 import {Footer} from './component'
-<<<<<<< HEAD
 import {CreateAccont} from './component'
 import axios from 'axios';
-=======
->>>>>>> a1f68f6ea3af2e44e52dda05da37a20e8d8ce044
 import { HomePages,
   HomeValoPages,
   HomePUBGPages,
@@ -27,21 +24,32 @@ const [signup,setsignup] = useState(false)
 
 
 const login = async() => {
-await axios.post("http://localhost:6970/login/", 
+axios.post("http://localhost:6970/login/", 
       {
         username : username,
         password : password
-      }).then((response) => {
-        console.log(response);
-        })
-      
-      .then(
-        alert('post successful')
-      )
-    
+      })
       .then(
         setAda(true)
       )
+      .then((response) => {
+        console.log(response)
+        if(response.data === "Wrong username/password combination! "){
+          window.location = "http://localhost:3000/"
+          alert('Wrong username/password combination!')
+          setAda(false)
+        }
+        // else {
+        //   setAda(true)
+        //   alert('post successful')
+        // }
+
+        })
+      
+      // .then(
+      //   alert('post successful')
+      // )
+    
       // then(
       //   window.location = "http://localhost:3000/recipes"
       // )
