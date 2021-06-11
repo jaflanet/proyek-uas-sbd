@@ -3,7 +3,6 @@ import logo_fm from '../../assets/CreateAsset/create.png'
 import besar from '../../assets/CreateAsset/kotak.png'
 import dikit from '../../assets/CreateAsset/kecil.png'
 import panahan from '../../assets/CreateAsset/panah.png'
-import "./index.css"
 
 const SignUp = () => {
     return (
