@@ -5,7 +5,6 @@ import online from "../../assets/HomeML/online_ml.png"
 import logo from "../../assets/HomeML/ml_logo_white.png"
 import "./index.css"
 
-
 const HomeML= () => {
     return (
         <div className="con-ML">
