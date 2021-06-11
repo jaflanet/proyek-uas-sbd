@@ -8,6 +8,7 @@
     margin:auto;
     text-align: center;
     justify-content: center;
+    width: max-content;
     display: flex;
     color: #FFFFFF;
     font-size: 24px;
@@ -61,7 +62,7 @@
     font-size:60pt;
     color:#FFFFFF;
     padding-bottom: 45px;
-    font-weight: 400;
+    font-weight:600;
   }
   
   form .txt_field{

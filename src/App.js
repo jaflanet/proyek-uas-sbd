@@ -22,6 +22,7 @@ if (ada === false){
              <div class="split left">
                  <div class="centered">
                     <span className="LOGO_FM">
+                        <img src={FMLogo} alt="logo" />
                      </span>
                      <span className="InfoText">
                          FINDMATES is an online third party website dedicated<br />
@@ -50,9 +51,6 @@ if (ada === false){
                     </div>
                 </div>
              </div>
-             <div className="aboutUs">
-                about us
-            </div>
      </div>
      </div> 
     </>
