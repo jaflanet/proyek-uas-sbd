@@ -4,7 +4,7 @@ import player from "../../assets/HomePUBG/recent_pubg.png"
 import online from "../../assets/HomePUBG/online_pubg.png"
 import logo from "../../assets/HomePUBG/pubg_logo_white.png"
 import "./index.css"
-
+import axios from 'axios';
 
 const HomePUBG= () => {
     return (

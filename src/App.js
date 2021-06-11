@@ -1,8 +1,10 @@
-import React,{useState} from 'react';
+import React,{useEffect, useState} from 'react';
 import FMLogo from "./assets/LoginAsset/Component_1.png"
 import './component/Login/index.css'
 import {Navbar} from './component'
 import {Footer} from './component'
+import {CreateAccont} from './component'
+import axios from 'axios';
 import { HomePages,
   HomeValoPages,
   HomePUBGPages,
@@ -12,6 +14,48 @@ import {Switch, Route, Link } from 'react-router-dom';
 function App() {
 const [ada,setAda] = useState(false)
 const [signup,setsignup] = useState(false)
+
+//buat hubungin ke backend
+//sans rakor aja dlu
+
+  const [ username, setUsername ] = useState("")
+  const [ password, setPassword ] = useState("");
+  // const [loginStatus, setLoginStatus] = usestate("")
+
+
+const login = async() => {
+axios.post("http://localhost:6970/login/", 
+      {
+        username : username,
+        password : password
+      })
+      .then(
+        setAda(true)
+      )
+      .then((response) => {
+        console.log(response)
+        if(response.data === "Wrong username/password combination! "){
+          window.location = "http://localhost:3000/"
+          alert('Wrong username/password combination!')
+          setAda(false)
+        }
+        // else {
+        //   setAda(true)
+        //   alert('post successful')
+        // }
+
+        })
+      
+      // .then(
+      //   alert('post successful')
+      // )
+    
+      // then(
+      //   window.location = "http://localhost:3000/recipes"
+      // )
+      // console.log(response)
+  }
+
 
 if (ada === false){
 
@@ -31,22 +75,24 @@ if (ada === false){
                      </span>
                  </div>
              </div>
+        
             <div class="split right">
                  <div class="centered2">
                      <div className="LoginPop">
                          <h1>SIGN IN</h1>
                          <form method="post">
                              <div class="txt_field">
-                                <input type="text" required />
+                                <input type="text" required onChange={(e) => setUsername(e.target.value)}/>
                                  <label>USERNAME</label>
                              </div>
                            <div class="txt_field">
-                                <input type="password" required />
+                                <input type="password" required onChange={(e) => setPassword(e.target.value)}/>
                                  <label>PASSWORD</label> 
                             </div>
                              <div class="pass"><button type="button" onClick={()=>setsignup(true)}>Don't have an account?</button></div>
                              <div className="submitButton">
-                                 <input type="image" src="https://i.ibb.co/M8bpJzM/Component-2.png" alt="login" onClick={()=>setAda(true)}></input>
+                                 {/* <input type="image" src="https://i.ibb.co/M8bpJzM/Component-2.png" alt="login" onClick={()=>setAda(true)}></input> */}
+                                 <input type="image" src="https://i.ibb.co/M8bpJzM/Component-2.png" alt="login" onClick={()=>login()}></input>
                              </div>
                          </form>
                     </div>
@@ -73,6 +119,7 @@ else {
             <Footer /> 
       </>
     )
-}
   }
+}
+
 export default App;
