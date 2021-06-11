@@ -7,16 +7,20 @@ import {CreateAccont} from './component'
 import { HomePages,
   HomeValoPages,
   HomePUBGPages,
-  HomeMLPages} from './pages';
-  import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+  HomeMLPages,
+SignUpPages,LoginPages} from './pages';
+  import {Switch, Route, Link } from 'react-router-dom';
 function App() {
 const [ada,setAda] = useState(false)
+const [signup,setsignup] = useState(false)
 
 if (ada === false){
 
   return( 
       
+    
     <> 
+    {signup ? <> <SignUpPages /> </>: 
      <div className="Container">
              <div className="Wrapper">
              <div class="split left">
@@ -43,7 +47,7 @@ if (ada === false){
                                 <input type="password" required />
                                  <label>PASSWORD</label> 
                             </div>
-                             <div class="pass">Don't have an account?</div>
+                             <div class="pass"><button type="button" onClick={()=>setsignup(true)}>Don't have an account?</button></div>
                              <div className="submitButton">
                                  <input type="image" src="https://i.ibb.co/M8bpJzM/Component-2.png" alt="login" onClick={()=>setAda(true)}></input>
                              </div>
@@ -53,13 +57,14 @@ if (ada === false){
              </div>
      </div>
      </div> 
+}
     </>
 
   )
 }
 else {
     return(
-            <Router>
+      <>
             <Navbar />
             <Switch>
             <Route exact path="/" component={HomePages}/>
@@ -68,7 +73,7 @@ else {
             <Route exact path="/HomeMLPages" component={HomeMLPages}/> 
             </Switch>
             <Footer /> 
-            </Router>
+      </>
     )
 }
   }
