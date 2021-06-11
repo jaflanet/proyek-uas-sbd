@@ -1,13 +1,7 @@
 import React from 'react'
 import logo_fm from '../../assets/CreateAsset/create.png'
-<<<<<<< HEAD
 import Select from 'react-select'
 import "./index.css"
-=======
-import besar from '../../assets/CreateAsset/kotak.png'
-import dikit from '../../assets/CreateAsset/kecil.png'
-import panahan from '../../assets/CreateAsset/panah.png'
->>>>>>> 07f793c3473c6f7172debbac9d1c8e58f9857dd0
 
 const region_options = [
     { value: 'North America', label: 'North America' },
@@ -107,14 +101,8 @@ const SignUp = () => {
                             <label1>PASSWORD</label1> 
                         </div>
                         <div className="submitButton_signup">
-                            <input type="image" src="https://i.ibb.co/M8bpJzM/Component-2.png" alt="submit"/*onClick="redirectFunct()"*/></input>
+                            <input type="image" src="https://i.ibb.co/M8bpJzM/Component-2.png" alt="submit"></input>
                         </div>
-
-                        {/* <script>
-                            function redirectFunct() {
-                             window.location.href="main";
-                            }
-                        </script> */}
                     </form>
                 </div>
                 </div>
