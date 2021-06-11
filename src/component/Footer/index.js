@@ -1,5 +1,4 @@
 import React from 'react'
-import logoKecil from '../../assets/FooterAsset/logo kecil 5.png'
 import tulisanKecil from '../../assets/FooterAsset/FINDMATES.png'
 import instaLogo from '../../assets/FooterAsset/insta.png'
 import twitterLogo from '../../assets/FooterAsset/twitter.png'
