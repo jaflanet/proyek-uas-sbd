@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 // import React from 'react'
 // import logo_fm from '../../assets/CreateAsset/create.png'
 // import Select from 'react-select'
 // import "./index.css"
+=======
+import React from 'react'
+import logo_fm from '../../assets/CreateAsset/create.png'
+import Select from 'react-select'
+import "./index.css"
+>>>>>>> 8ad2a312572988c78b43d4b90eaf2053a7a41e65
 
 // const region_options = [
 //     { value: 'North America', label: 'North America' },
@@ -45,6 +52,7 @@
 //     })
 //   };
 
+<<<<<<< HEAD
 // const SignUp = () => {
 //     return (
 //         <>
@@ -117,3 +125,71 @@
 //     )
 // }
 // export default SignUp
+=======
+const SignUp = () => {
+    return (
+        <>
+        <div className="Container-signup">
+            <div className="Wrapper-signup">
+                <div className="logo_signup">
+                    <img src={logo_fm} className="logofm" alt="logo harusnye"/>
+                </div>
+                <div className="boxchoice">
+                    <h1>SIGN UP</h1>
+                    <form method="post">
+                        <div className="txt_field_signup">
+                            <input type="text" required />
+                            <label1>USERNAME</label1>
+                        </div>
+                        <div className="txt_field_signup">
+                            <input type="text" required />
+                            <labelage>AGE</labelage> 
+                        </div>
+                        <div className="txt_field_signup">
+                            <Select 
+                            options={region_options}
+                            styles={customStyles}
+                            isSearchable={true}
+                            />
+                            <label>REGION</label> 
+                        </div>
+                        <div className="txt_field_signup">
+                        <Select 
+                            options={games_options}
+                            styles={customStyles}
+                            isSearchable={true}
+                            />
+                            <label3>GAMES</label3> 
+                        </div>
+                        <div className="txt_field_signup">
+                        <Select 
+                            options={time_options}
+                            styles={customStyles}
+                            isSearchable={true}
+                            />
+                            <label4>ONLINE TIME</label4> 
+                        </div>
+                        <div className="txt_field_signup">
+                            <Select 
+                            options={gender_options}
+                            styles={customStyles}
+                            isSearchable={true}
+                            />
+                            <label2>SEX</label2> 
+                        </div>
+                        <div className="txt_field_signup">
+                            <input type="password" required />
+                            <label1>PASSWORD</label1> 
+                        </div>
+                        <div className="submitButton_signup">
+                            <input type="image" src="https://i.ibb.co/M8bpJzM/Component-2.png" alt="submit"></input>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+        </>
+    )
+}
+export default SignUp
+>>>>>>> 8ad2a312572988c78b43d4b90eaf2053a7a41e65
