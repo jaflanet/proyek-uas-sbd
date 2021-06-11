@@ -1,28 +1,184 @@
-.background{
-    background-position: center ;
-    height: 50%;
-}
-.warna{
-    position: relative;
-
-    width: 300px;
-    height: 450px;
-    left: 550px;
-    top: -3px;
+.Container-signup{
+    overflow: hidden;
+    background: #EEFCFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    }
     
-    background: linear-gradient(360deg, #46A29E 2.05%, #202733 50.88%, #0A0C10 96.97%);
+    .page-container-signup{
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+    .content-wrap-signup{
+      flex: 1;
+    }
+    
+      .Wrapper-signup{
+        background: linear-gradient(360deg, #46A29E 2.05%, #202733 50.88%, #0A0C10 96.97%);
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
+
+.logo_signup{
+    position: relative;
+    top: 20px;
+    left: 200px;
 }
-.logofm{
-    height: 30%;
-    width: 60%;
-    margin-top: 5%;
-}
-.kotakgede{
-    width: 300px;
-    height: 400px;
-    margin-left: 0%;
-}
-.kotakkecil{
+    
+.logo_signup img{
+    max-width: 75%;
     height: auto;
-    width: auto;
+}
+
+.boxchoice{
+    position: relative;
+    top: 200px;
+    left: 85px;
+    border-radius: 35px;
+    height: 750px;
+    width:  575px;
+    background-color: rgba(102,252,240,0.78);
+    font-size:23px;
+  }
+  
+  .boxchoice h1{
+    position: relative;
+    bottom: 50px;
+    left: 135px;
+    font-size:60pt;
+    color:#FFFFFF;
+    font-weight:600;
+  }
+  
+  form .txt_field_signup{
+    position: relative;
+    left: 70px;
+    bottom: 85px;
+    margin: 30px 0;
+  }
+
+  .txt_field_signup input{
+    width : 400px;
+    height : 50px;
+    padding : 0px 15px;
+    font-size: 20px;
+    border:#ffffff;
+    border-width: 20px;
+    border-radius: 3px;
+  }
+  
+  .txt_field_signup label{
+    position: absolute;
+    top: 65%;
+    left: 320px;
+    color: #a5a5a5;
+    transform: translateY(-50%);
+    font-size: 18px;
+    font-weight: 400;
+    pointer-events: none;
+  }
+
+  .txt_field_signup label1{
+    position: absolute;
+    top: 65%;
+    left: 328px;
+    color: #a5a5a5;
+    transform: translateY(-50%);
+    font-size: 18px;
+    font-weight: 400;
+    pointer-events: none;
+  }
+  
+  .txt_field_signup labelage{
+    position: absolute;
+    top: 65%;
+    left: 385px;
+    color: #a5a5a5;
+    transform: translateY(-50%);
+    font-size: 18px;
+    font-weight: 400;
+    pointer-events: none;
+  }
+
+  .txt_field_signup label2{
+    position: absolute;
+    top: 65%;
+    left: 350px;
+    color: #a5a5a5;
+    transform: translateY(-50%);
+    font-size: 18px;
+    font-weight: 400;
+    pointer-events: none;
+  }
+  
+  .txt_field_signup label3{
+    position: absolute;
+    top: 65%;
+    left: 323px;
+    color: #a5a5a5;
+    transform: translateY(-50%);
+    font-size: 18px;
+    font-weight: 400;
+    pointer-events: none;
+  }
+
+  .txt_field_signup label4{
+    position: absolute;
+    top: 65%;
+    left: 276px;
+    color: #a5a5a5;
+    transform: translateY(-50%);
+    font-size: 18px;
+    font-weight: 400;
+    pointer-events: none;
+  }
+
+  .txt_field_signup input:focus ~ label-signup,
+  .txt_field_signup input:valid ~ label-signup{
+    color:#585858;
+    border-color: #757575;
+  }
+
+  .txt_field_signup input:focus ~ label1{
+    color:#585858;
+    border-color: #757575;
+  }
+
+  .txt_field_signup input:focus ~ label2{
+    color:#585858;
+    border-color: #757575;
+  }
+
+  .txt_field_signup input:focus ~ label3{
+    color:#585858;
+    border-color: #757575;
+  }
+
+  .txt_field_signup input:focus ~ label4{
+    color:#585858;
+    border-color: #757575;
+  }
+  
+  .txt_field_signup input:focus ~ labelage{
+    color:#585858;
+    border-color: #757575;
+  }
+
+  .submitButton_signup{
+    position: relative;
+    bottom: 164px;
+    left: 620px;
+  }
+
+.logofm{
+    align-items: center;
+    position: relative;
+    left:540.5px;
+    scale: 0.8;
 }
