@@ -8,7 +8,7 @@ import { HomePages,
   HomePUBGPages,
   HomeMLPages,
 SignUpPages,ProfilePages} from './pages';
-  import {Switch, Route, Link } from 'react-router-dom';
+import {Switch, Route, Link } from 'react-router-dom';
 function App() {
 const [ada,setAda] = useState(false)
 const [signup,setsignup] = useState(false)
@@ -24,9 +24,7 @@ if (ada === false){
              <div className="Wrapper">
              <div class="split left">
                  <div class="centered">
-                    <span className="LOGO_FM">
-                        <img src={FMLogo} alt="logo" />
-                     </span>
+                        <img src={FMLogo} alt="logo" className="LOGO_FM"/>
                      <span className="InfoText">
                          FINDMATES is an online third party website dedicated<br />
                          to help gamers find teamates, and maybe a soulmate too.
