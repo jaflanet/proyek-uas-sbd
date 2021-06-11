@@ -1,7 +1,9 @@
-.LOGO_FM{
+.LOGO_FM:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
   }
   
   .InfoText{
