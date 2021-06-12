@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-        <NavLink to='/'>
+        <NavLink to ='/'>
         <img src={logo_web} alt='logo' className='logo-web'/>
         </NavLink>
         <Bars />
@@ -37,7 +37,6 @@ const Navbar = () => {
         </NavBtn>
       </Nav>
     </>
-  );
-};
-
+  )
+}
 export default Navbar;
