@@ -33,7 +33,7 @@ const Navbar = () => {
           </NavBtnLink>
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to='/SignUpPages'>profil</NavBtnLink>
+          <NavBtnLink to='/SignUpPages'>PROFILE</NavBtnLink>
         </NavBtn>
       </Nav>
     </>

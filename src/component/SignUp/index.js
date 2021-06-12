@@ -1,6 +1,9 @@
 import React from 'react'
 import logo_fm from '../../assets/CreateAsset/create.png'
 import Select from 'react-select'
+import logo_Valo from '../../assets/NavbarAsset/valo_logo_white.png'
+import logo_PUBG from '../../assets/NavbarAsset/pubg_logo_white.png'
+import logo_ML from '../../assets/NavbarAsset/ml_logo_white.png'
 import "./index.css"
 
 const region_options = [
@@ -22,12 +25,6 @@ const region_options = [
 const gender_options = [
     { value: 'Male', label: 'Male'},
     { value: 'Female', label: 'Female'}
-]
-
-const games_options = [
-    { value: 'PUBG', label: 'PUBG'},
-    { value: 'Valorant', label: 'Valorant'},
-    { value: 'Mobile Legend', label: 'Mobile Legend'}    
 ]
 
 const time_options = [
@@ -53,8 +50,19 @@ const SignUp = () => {
                 <div className="logo_signup">
                     <img src={logo_fm} className="logofm" alt="logo harusnye"/>
                 </div>
+                <div className="PENCETAN">
+                    <button className="button">
+                        <img src={logo_Valo} alt='Valo' />
+                    </button>
+                    <button className="button">
+                        <img src={logo_PUBG} alt='PUBG' />
+                    </button>
+                    <button className="button">
+                        <img src={logo_ML} alt='ML' />
+                    </button>
+                </div>
                 <div className="boxchoice">
-                    <h1>SIGN UP</h1>
+                    <h1>USER DATA</h1>
                     <form method="post">
                         <div className="txt_field_signup">
                             <input type="text" required />
@@ -71,14 +79,6 @@ const SignUp = () => {
                             isSearchable={true}
                             />
                             <label>REGION</label> 
-                        </div>
-                        <div className="txt_field_signup">
-                        <Select 
-                            options={games_options}
-                            styles={customStyles}
-                            isSearchable={true}
-                            />
-                            <label3>GAMES</label3> 
                         </div>
                         <div className="txt_field_signup">
                         <Select 
@@ -101,14 +101,8 @@ const SignUp = () => {
                             <label1>PASSWORD</label1> 
                         </div>
                         <div className="submitButton_signup">
-                            <input type="image" src="https://i.ibb.co/M8bpJzM/Component-2.png" alt="submit"/*onClick="redirectFunct()"*/></input>
+                            <input type="image" src="https://i.ibb.co/M8bpJzM/Component-2.png" alt="submit"></input>
                         </div>
-
-                        {/* <script>
-                            function redirectFunct() {
-                             window.location.href="main";
-                            }
-                        </script> */}
                     </form>
                 </div>
                 </div>
