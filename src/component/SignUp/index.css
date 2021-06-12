@@ -1,7 +1,6 @@
 .Container-signup{
     overflow: hidden;
     background: #EEFCFF;
-    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -27,31 +26,27 @@
 
 .logo_signup{
     position: relative;
-    top: 20px;
-    left: 200px;
+    top: 300px;
+    left: -500px;
 }
     
-.logo_signup img{
-    max-width: 75%;
-    height: auto;
-}
-
 .boxchoice{
     position: relative;
-    top: 200px;
-    left: 85px;
+    right: 360px;
+    top: 50px;
     border-radius: 35px;
-    height: 750px;
-    width:  575px;
+    height: 710px;
+    width:  560px;
     background-color: rgba(102,252,240,0.78);
     font-size:23px;
+    margin-bottom: 85px;
   }
   
   .boxchoice h1{
     position: relative;
     bottom: 50px;
-    left: 135px;
-    font-size:60pt;
+    left: 112px;
+    font-size:50pt;
     color:#FFFFFF;
     font-weight:600;
   }
@@ -172,13 +167,55 @@
 
   .submitButton_signup{
     position: relative;
-    bottom: 164px;
-    left: 620px;
+    bottom: 100px;
+    left: 382px;
+    transform: scale(0.85);
   }
+
+.submitButton_signup input:hover{
+  transform: scale(1.06);
+  transition: all 0.2s ease-in-out;
+}
 
 .logofm{
     align-items: center;
     position: relative;
     left:540.5px;
     scale: 0.8;
+}
+
+.PENCETAN{
+  position: relative;
+  top: 600px;
+  right: 470px;
+  align-items: center;
+}
+
+.button{
+  align-items: baseline;
+  background-color: #252525;
+  border: none;
+  border-radius: 5px;
+  height: 90px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor:pointer;
+}
+
+.button img:hover{
+  transform: scale(1.06);
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover{
+  transform: scale(1.01);
+  transition: all 0.2s ease-in-out;
+}
+
+.button:focus{
+  background-color: #46A29E;
 }
