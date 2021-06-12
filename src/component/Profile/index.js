@@ -1,5 +1,5 @@
 import React from 'react'
-import gambar_profil from "../../assets/ProfileAsset/profil_pubg.png"
+import gambar_profil from "../../assets/ProfileAsset/profil_profil.png"
 import player from "../../assets/ProfileAsset/profile-.png"
 
 
@@ -18,7 +18,7 @@ const Profile= () => {
                             <img src={gambar_profil} className="profilp"/> 
                             </div>
                     
-                            <div className="tulisan">
+                            <div className="tulisanprofil">
                             
                              <label for="fname">Username :</label>
                                 <br></br>
@@ -41,7 +41,7 @@ const Profile= () => {
                 </div>
                <div className="container-profil">
                    
-                       <div className="recentplayer">
+                       <div className="recentprofil">
                            <img src={player} className="columnprofil"/>
                        </div>
                    </div>
