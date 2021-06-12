@@ -2,7 +2,31 @@ import React from 'react'
 import tabel1 from "../../assets/HomeML/profile-.png"
 import tabel2 from "../../assets/HomeML/profil_profil.png"
 import "./index.css"
+import Select from 'react-select'
+const time_options = [
+    { value: 'Morning', label: 'Morning'},
+    { value: 'Afternoon', label: 'Afternoon'},
+    { value: 'Evening', label: 'Evening'},
+    { value: 'Night', label: 'Night'}
+]
 
+const rank_option = [
+    { value: 'Warrior', label: 'Warrior'},
+    { value: 'Elite', label: 'Elite'},
+    { value: 'Master', label: 'Master'},
+    { value: 'Grandmaster', label: 'Grandmaster'},
+    { value: 'Epic', label: 'Epic'},
+    { value: 'Legend', label: 'Legend'},
+    { value: 'Mythic', label: 'Mythic'},
+    { value: 'Mythical Glory', label: 'Mythical Glory'}
+]
+const customStyles = {
+    container: provided => ({
+      ...provided,
+      width: 430,
+      color: 'black'
+    })
+  };
 
 const HomeML= () => {
     return (
@@ -19,8 +43,14 @@ const HomeML= () => {
                             <div>
                                 
                             <br></br>
+                            <Select 
+                            options={rank_option}
+                            styles={customStyles}
+                            isSearchable={true}
                             
-                            <input type="radio" id="Rank" name="ranking"/>
+                            />
+                            <label>RANK</label> 
+                            {/* <input type="radio" id="Rank" name="ranking"/>
                             <label for="Rank">Warrior</label>
                             <br></br>
                             <input type="radio" id="Rank" name="ranking"/>
@@ -42,7 +72,7 @@ const HomeML= () => {
                             <label for="Rank">Mythic</label>
                             <br></br>
                             <input type="radio" id="Rank" name="ranking"/>
-                            <label for="Rank">Mythic Glory</label>
+                            <label for="Rank">Mythic Glory</label> */}
                         </div>
                        </div> 
                     </div>
@@ -53,7 +83,13 @@ const HomeML= () => {
 
                             <div className="radio2">
                             <br></br>
-                            <input type="radio" id="cuca" name="cuaca1"/>
+                            <Select 
+                            options={time_options}
+                            styles={customStyles}
+                            isSearchable={true}
+                            />
+                            <label>REGION</label> 
+                            {/* <input type="radio" id="cuca" name="cuaca1"/>
                             <label for="cuca">Morning</label> 
                             <input type="radio" id="cuca" name="cuaca1"/>
                             <label for="cuca">Afternoon</label> 
@@ -61,7 +97,7 @@ const HomeML= () => {
                             <label for="cuca">Evening</label> 
                             <input type="radio" id="cuca" name="cuaca1"/>
                             <label for="cuca">Night</label>   
-                                
+                                 */}
                             </div>
                         </div>
                         
