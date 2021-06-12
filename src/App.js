@@ -5,6 +5,7 @@ import {Navbar} from './component'
 import {Footer} from './component'
 import {CreateAccont} from './component'
 import axios from 'axios';
+import { useHistory } from 'react-router-dom'
 import { HomePages,
   HomeValoPages,
   HomePUBGPages,
@@ -14,14 +15,14 @@ import {Switch, Route, Link } from 'react-router-dom';
 function App() {
 const [ada,setAda] = useState(false)
 const [signup,setsignup] = useState(false)
-
-//buat hubungin ke backend
-//sans rakor aja dlu
-
-  const [ username, setUsername ] = useState("")
-  const [ password, setPassword ] = useState("");
+  const [ username, setUsername ] = useState()
+  const [ password, setPassword ] = useState()
+  const [ data, setData] = useState("");
+  const history = useHistory();
   // const [loginStatus, setLoginStatus] = usestate("")
-
+  const handleClick = () => {
+    history.push(`/${username}`);
+  }
 
 const login = async() => {
 axios.post("http://localhost:6970/login/", 
@@ -33,27 +34,21 @@ axios.post("http://localhost:6970/login/",
         setAda(true)
       )
       .then((response) => {
-        console.log(response)
+        console.log(response.data)
+        setData(response.data[0].username)
+        console.log(data)
         if(response.data === "Wrong username/password combination! "){
           window.location = "http://localhost:3000/"
           alert('Wrong username/password combination!')
           setAda(false)
         }
-        // else {
-        //   setAda(true)
-        //   alert('post successful')
-        // }
 
         })
+        handleClick();
       
       // .then(
       //   alert('post successful')
       // )
-    
-      // then(
-      //   window.location = "http://localhost:3000/recipes"
-      // )
-      // console.log(response)
   }
 
 
@@ -110,10 +105,10 @@ else {
       <>
             <Navbar />
             <Switch>
-            <Route exact path="/" component={HomePages}/>
+            <Route exact path="/:username" component={HomePages}/>
             <Route exact path="/HomeValoPages" component={HomeValoPages}/> 
             <Route exact path="/HomePUBGPages" component={HomePUBGPages}/> 
-            <Route exact path="/HomeMLPages" component={HomeMLPages}/> 
+            <Route exact path="/HomeMLPages/:username" component={HomeMLPages}/> 
             <Route exact path="/ProfilePages" component={ProfilePages}/> 
             </Switch>
             <Footer /> 

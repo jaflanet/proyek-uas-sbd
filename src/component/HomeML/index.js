@@ -1,11 +1,33 @@
-import React from 'react'
+import React, { useState,useEffect } from 'react'
 import gambar_profil from "../../assets/HomeML/profil_ml.png"
 import player from "../../assets/HomeML/recent_ml.png"
 import online from "../../assets/HomeML/online_ml.png"
 import logo from "../../assets/HomeML/ml_logo_white.png"
 import "./index.css"
+import { useParams } from 'react-router-dom'
+import axios from 'axios';
 
 const HomeML= () => {
+    const { username } = useParams()
+    const [data,setData] = useState()
+    useEffect(() => {
+        let toggle= true
+        const fetchdata =async()=>{
+            const response = await axios.get(`http://localhost:6970/signup/${username}`)
+            if( toggle === true) {
+                console.log(response)
+                // setData(response.data)
+                toggle = false
+            }
+
+        }
+        fetchdata();
+        return ()=> toggle = false
+    })
+    
+   
+
+    
     return (
         <div className="con-ML">
         <div className="warna">
@@ -21,8 +43,8 @@ const HomeML= () => {
                             
                         </div>
                             <div className="tulisan">
-                            
                              <label for="fname">Username :</label>
+                             {/* <p>{data.username}</p> */}
                                 <br></br>
                                 <br></br>
                                 <label for="lname">ID :</label>
@@ -51,6 +73,7 @@ const HomeML= () => {
                           
         </div>
     )
+    
 }
 
 export default HomeML
