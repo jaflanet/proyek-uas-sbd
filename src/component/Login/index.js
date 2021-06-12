@@ -9,7 +9,7 @@ const Login = ({setLogin}) => {
             <div class="split left">
                 <div class="centered">
                     <span className="LOGO_FM">
-                    <img src={FMLogo} alt ="gambar gaada tot" />
+                    <img src={FMLogo} alt ="gambar logo"   className="LOGO_FM"/>
                     </span>
                     <span className="InfoText">
                         FINDMATES is an online third party website dedicated<br />
