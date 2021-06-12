@@ -20,7 +20,7 @@
    content: "";
    display: table;
    clear: both;
-   height:200px;
+   height:33,3%;
    width: 100%;
  }
 .home-c1{
@@ -76,6 +76,37 @@
   height: 130%;
 }
 
+.LOGO_FM{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LOGO_FM:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-aboutus-home{
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 0%;
+    margin-left: 10%;
+    width: 90%;
+}
+
+.InfoText{
+  margin:auto;
+  text-align: center;
+  justify-content: center;
+  width: max-content;
+  display: flex;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 400;
+}
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
