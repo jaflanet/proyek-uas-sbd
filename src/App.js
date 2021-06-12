@@ -18,7 +18,7 @@ return(
             <Route exact path="/HomeValoPages" component={HomeValoPages}/> 
             <Route exact path="/HomePUBGPages" component={HomePUBGPages}/> 
             <Route exact path="/HomeMLPages" component={HomeMLPages}/> 
-            <Route exact path="/ProfilePages" component={ProfilePages}/> 
+            <Route exact path="/SignUpPages" component={SignUpPages}/> 
             </Switch>
             <Footer /> 
       </>
