@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 const Footer = () => {
-    const classes = useStyles();
+const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => {

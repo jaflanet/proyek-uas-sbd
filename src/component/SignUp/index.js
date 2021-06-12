@@ -6,6 +6,28 @@ import logo_PUBG from '../../assets/NavbarAsset/pubg_logo_white.png'
 import logo_ML from '../../assets/NavbarAsset/ml_logo_white.png'
 import "./index.css"
 import axios from 'axios';
+import { makeStyles } from '@material-ui/core/styles';
+import Modal from '@material-ui/core/Modal';
+import Backdrop from '@material-ui/core/Backdrop';
+import Fade from '@material-ui/core/Fade';
+import SignUpValo from '../SignUpValo'
+import SignUpPubg from '../SignUpPubg'
+import SignUpML from '../SignUpML'
+
+
+const useStyles = makeStyles((theme) => ({
+    modal: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    paper: {
+      backgroundColor: theme.palette.background.paper,
+      border: '2px solid #000',
+      boxShadow: theme.shadows[5],
+      padding: theme.spacing(2, 4, 3),
+    },
+  }));
 
 const region_options = [
     { value: 'North America', label: 'North America' },
@@ -79,6 +101,32 @@ const SignUp = () => {
         // return () => toggle = false
     // })
 
+    const classes = useStyles();
+    const [open1, setOpen1] = React.useState(false);
+    const [open2, setOpen2] = React.useState(false);
+    const [open3, setOpen3] = React.useState(false);
+  
+    const handleOpen1 = () => {
+      setOpen1(true);
+    };
+  
+    const handleClose1 = () => {
+      setOpen1(false);
+    };
+    const handleOpen2 = () => {
+        setOpen2(true);
+      };
+    
+      const handleClose2 = () => {
+        setOpen2(false);
+      };
+      const handleOpen3 = () => {
+        setOpen3(true);
+      };
+    
+      const handleClose3 = () => {
+        setOpen3(false);
+      };
 
     return (
         <>
@@ -88,15 +136,69 @@ const SignUp = () => {
                     <img src={logo_fm} className="logofm" alt="logo harusnye"/>
                 </div>
                 <div className="PENCETAN">
-                    <button className="button">
+                    <button onClick={handleOpen1} className="button">
                         <img src={logo_Valo} alt='Valo' />
                     </button>
-                    <button className="button">
-                        <img src={logo_PUBG} alt='PUBG' />
+                    <Modal
+                            aria-labelledby="transition-modal-title"
+                            aria-describedby="transition-modal-description"
+                            className={classes.modal}
+                            open={open1}
+                            onClose={handleClose1}
+                            closeAfterTransition
+                            BackdropComponent={Backdrop}
+                            BackdropProps={{
+                            timeout: 500,
+                            }}
+                        >
+                        <Fade in={open1}>
+                        <div className={classes.paper}>
+                        <SignUpValo />
+                        </div>
+                        </Fade>
+                    </Modal>
+                    <button  onClick={handleOpen2} className="button">
+                        <img src={logo_PUBG}alt='PUBG' />
                     </button>
-                    <button className="button">
+                    <Modal
+                            aria-labelledby="transition-modal-title"
+                            aria-describedby="transition-modal-description"
+                            className={classes.modal}
+                            open={open2}
+                            onClose={handleClose2}
+                            closeAfterTransition
+                            BackdropComponent={Backdrop}
+                            BackdropProps={{
+                            timeout: 500,
+                            }}
+                        >
+                        <Fade in={open2}>
+                        <div className={classes.paper}>
+                        <SignUpPubg />
+                        </div>
+                        </Fade>
+                    </Modal>
+                    <button onClick={handleOpen3} className="button">
                         <img src={logo_ML} alt='ML' />
                     </button>
+                    <Modal
+                            aria-labelledby="transition-modal-title"
+                            aria-describedby="transition-modal-description"
+                            className={classes.modal}
+                            open={open3}
+                            onClose={handleClose3}
+                            closeAfterTransition
+                            BackdropComponent={Backdrop}
+                            BackdropProps={{
+                            timeout: 500,
+                            }}
+                        >
+                        <Fade in={open3}>
+                        <div className={classes.paper}>
+                            <SignUpML />
+                        </div>
+                        </Fade>
+                    </Modal>
                 </div>
                 <div className="boxchoice">
                     <h1>USER DATA</h1>
