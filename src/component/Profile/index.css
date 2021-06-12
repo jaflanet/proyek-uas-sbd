@@ -1,0 +1,90 @@
+.con-ML{
+    background-image: url("../../assets/ProfileAsset/background.png");
+    
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    
+}
+  .background-FM{
+      position: relative;
+    background-image: url("../../assets/ProfileAsset/logo_back.png");
+
+    height: 80%;
+    width: 60%;
+    position: relative;
+    left: 300px;
+    bottom: 20%;
+}  
+
+
+.warna{
+    
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: rgba(10, 12, 16, 0.9);
+    mix-blend-mode: normal;
+}
+.container-row{
+    display: table;
+    clear: both;
+    height: 100%;
+    width: 100%;
+    top: 20%;
+}
+
+
+.recentplayer{
+    
+    margin-left: -26%;
+    top: 0;
+    width: 0;
+    height: 0;
+    
+    
+}
+
+.profilml{
+    margin-left: -35%;
+
+   
+}
+.player-column1{
+    left: 50%;
+
+}
+
+.tulisan{
+    position: absolute;
+    font-size:12pt;
+    color:black;
+    padding-bottom: 45px;
+    font-weight: 800;
+    left: 30px;
+    top: 50px;
+}
+.gambar-profil{
+    left: 0%;
+}
+
+.ml{
+    position: absolute;
+    height: 15%;
+    width: 25%;
+    top: 10%;
+    right: 0%;
+}
+.tulisan2{
+    position: absolute;
+    font-size:24pt;
+    color:black;
+    padding-bottom: 45px;
+    font-weight: 800;
+    left: 380px;
+    top: 10px;
+}
