@@ -1,57 +1,117 @@
-// import React from 'react'
-// import gambar_profil from "../../assets/HomeValo/profil_Valo.png"
-// import player from "../../assets/HomeValo/recent_Valo.png"
-// import online from "../../assets/HomeValo/online_Valo.png"
-// import logo from "../../assets/HomeValo/valo_logo_white.png"
-// import "./index.css"
+import React from 'react'
+import tabel1 from "../../assets/HomeML/profile-.png"
+import tabel2 from "../../assets/HomeML/profil_profil.png"
+import "./index.css"
+import Select from 'react-select'
+const time_options = [
+    { value: 'Morning', label: 'Morning'},
+    { value: 'Afternoon', label: 'Afternoon'},
+    { value: 'Evening', label: 'Evening'},
+    { value: 'Night', label: 'Night'}
+]
 
+const rank_option = [
+    { value: 'Iron', label: 'Iron'},
+    { value: 'Bronze', label: 'Bronze'},
+    { value: 'Silver', label: 'Silver'},
+    { value: 'Gold', label: 'Gold'},
+    { value: 'Platinum', label: 'Platinum'},
+    { value: 'Diamond', label: 'Diamond'},
+    { value: 'Immortal', label: 'Immortal'},
+    { value: 'Radiant', label: 'Radiant'}
+]
+const customStyles = {
+    container: provided => ({
+      ...provided,
+      width: 430,
+      color: 'black'
+    })
+  };
 
-// const HomeValo= () => {
-//     return (
-//         <div className="con-valo">
-//         <div className="warnavalo">
-//         <div className="background-valo">
-               
-//                 <div className="container-valo">
+const HomeValo= () => {
+    return (
+        <>
+        <div className="HomeValo">
+            <div className="warna-ml">
+                <div className="row1">
+                    <img src={tabel1} className="tab1"/>
+                    <div className="col1">
+                        <div className="tulisancol1">
+                            <label for="Rank">Rank</label>
+                        
+                        <div className="radio1">
+                            <div>
+                                
+                            <br></br>
+                            <Select 
+                            options={rank_option}
+                            styles={customStyles}
+                            isSearchable={true}
+                            
+                            />
+                            <label>RANK</label> 
+                        </div>
+                       </div> 
+                    </div>
+                    <div className="col2">
+                    <div className="tulisancol2">
+                        
+                            <label for="Online">Online Time</label>
+
+                            <div className="radio2">
+                            <br></br>
+                            <Select 
+                            options={time_options}
+                            styles={customStyles}
+                            isSearchable={true}
+                            />
+                            <label>REGION</label> 
+                                 
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div className="col3">
+                    <div className="tulisancol3">
+                            <label for="Username">Username Web</label>
+                            
+                            <div className="formulir1">
+                            <br></br>
+                            <br></br>
+                            <input type="form" id="formulir" name="formu"/>
+                            <br></br>
+                             <label for="formulir">Input Your Username</label> 
+                             </div>
+                        </div>
+                        
+                    </div>
                     
-//                         <div className="gambar-valo">
-//                             <img src={gambar_profil} className="profilvalo"/> 
-//                             </div>
-//                         <div className="logovalo">
-//                             <img src={logo} className="valo"/>
-                            
-//                         </div>
-//                             <div className="tulisanvalo">
-                            
-//                              <label for="fname">Username :</label>
-//                                 <br></br>
-//                                 <br></br>
-//                                 <label for="lname">Tag :</label>
-//                                 <br></br>
-//                                 <br></br>
-//                                 <label for="email">Role :</label>  
-//                             </div>       
-                                               
-                                      
-//                 </div>
-//                <div className="container-valo">
-                   
-//                        <div className="recentvalo">
-//                            <img src={player} className="player-valo"/>
-//                        </div>
-//                        <div className="playervalo">
-//                            <img src={online} classname="online-valo"/>
-//                        </div>
-//                    </div>
-                   
-               
+                </div>
+                <div className="row2">
+                    <div className="kotakbawah">
+                    <img src={tabel2} className="tab2"/>
+                    </div>
+                    <div className="tulisanr2">
+                    <label for="tamates">Temates For You</label>
+                    </div>
+                    <div className="r2c1">
+
+                        
+                    </div>
+                    <div className="r2c2">
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+    
+            
         
-//             </div>
-//         </div>
+        </>
+    )
+    
+}
 
-                          
-//         </div>
-//     )
-// }
-
-// export default HomeValo
+export default HomeValo;
