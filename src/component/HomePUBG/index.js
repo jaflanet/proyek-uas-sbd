@@ -8,17 +8,17 @@ import axios from 'axios';
 
 const HomePUBG= () => {
     return (
-        <div className="con-ML">
+        <div className="con-PUBG">
         <div className="warna">
         <div className="background-FM">
                
                 <div className="container-row">
                     
                         <div className="gambar-profil">
-                            <img src={gambar_profil} className="profilml"/> 
+                            <img src={gambar_profil} className="profilPUBG"/> 
                             </div>
-                        <div className="logoml">
-                            <img src={logo} className="ml"/>
+                        <div className="logoPUBG">
+                            <img src={logo} className="PUBG"/>
                             
                         </div>
                             <div className="tulisan">

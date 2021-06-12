@@ -8,20 +8,20 @@ import "./index.css"
 
 const HomeValo= () => {
     return (
-        <div className="con-ML">
-        <div className="warna">
-        <div className="background-FM">
+        <div className="con-valo">
+        <div className="warnavalo">
+        <div className="background-valo">
                
-                <div className="container-row">
+                <div className="container-valo">
                     
-                        <div className="gambar-profil">
-                            <img src={gambar_profil} className="profilml"/> 
+                        <div className="gambar-valo">
+                            <img src={gambar_profil} className="profilvalo"/> 
                             </div>
-                        <div className="logoml">
-                            <img src={logo} className="ml"/>
+                        <div className="logovalo">
+                            <img src={logo} className="valo"/>
                             
                         </div>
-                            <div className="tulisan">
+                            <div className="tulisanvalo">
                             
                              <label for="fname">Username :</label>
                                 <br></br>
@@ -34,13 +34,13 @@ const HomeValo= () => {
                                                
                                       
                 </div>
-               <div className="container-row">
+               <div className="container-valo">
                    
-                       <div className="recentplayer">
-                           <img src={player} className="player-column1"/>
+                       <div className="recentvalo">
+                           <img src={player} className="player-valo"/>
                        </div>
-                       <div className="playeronline">
-                           <img src={online} classname="online-column2"/>
+                       <div className="playervalo">
+                           <img src={online} classname="online-valo"/>
                        </div>
                    </div>
                    
