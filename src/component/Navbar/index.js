@@ -12,12 +12,19 @@ import logo_Valo from '../../assets/NavbarAsset/valo_logo_white.png'
 import logo_PUBG from '../../assets/NavbarAsset/pubg_logo_white.png'
 import logo_ML from '../../assets/NavbarAsset/ml_logo_white.png'
 import "./index.css"
+import { useHistory } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
+// const handleClick = () => {
+//   history.push(`/${setData}`);
+// }
 
 const Navbar = () => {
+  const { setData } = useParams()
+  console.log(setData)
   return (
     <>
       <Nav>
-        <NavLink to='/'>
+        <NavLink to={`/${setData}`} >
         <img src={logo_web} alt='logo' className='logo-web'/>
         </NavLink>
         <Bars />
@@ -28,7 +35,7 @@ const Navbar = () => {
           <NavBtnLink to='/HomePUBGPages'>
           <img src={logo_PUBG} alt='PUBG' />
           </NavBtnLink>
-          <NavBtnLink to='/HomeMLPages'>
+          <NavBtnLink to={`HomeMLPages/${setData}`}>
           <img src={logo_ML} alt='ML' />
           </NavBtnLink>
         </NavMenu>

@@ -1,14 +1,15 @@
-.con-ML{
-    position: relative;
-    background-image: url("../../assets/HomeML/background.png");
+.con-valo{
+    background-image: url("../../assets/HomeValo/background.png");
+    
     background-position: center;
     background-size: cover;
     height: 100%;
     
 }
-  .background-FM{
+
+  .background-valo{
       position: relative;
-    background-image: url("../../assets/HomeML/logo_back.png");
+    background-image: url("../../assets/HomeValo/logo_back.png");
 
     height: 80%;
     width: 60%;
@@ -18,7 +19,7 @@
 }  
 
 
-.warna{
+.warnavalo{
     
     position: relative;
     text-align: center;
@@ -30,7 +31,7 @@
     background: rgba(10, 12, 16, 0.9);
     mix-blend-mode: normal;
 }
-.container-row{
+.container-valo{
     display: table;
     clear: both;
     height: 100%;
@@ -39,34 +40,34 @@
 }
 
 
-.recentplayer{
+.recentvalo{
     position: relative;
     margin-left: -80%;
     top: 100px;
     
 }
-.playeronline{
+.playervalo{
     position: relative;
     margin-left: 60%;
     margin-top: -32%;
 
     
 }
-.profilml{
+.profilvalo{
     margin-left: -35%;
 
    
 }
-.player-column1{
+.player-valo{
     margin-top: 0;
     left: 0%;
 }
-.online-column2{
+.online-valo{
     margin-top: 0%;
     right: 0%;
 }
 
-.tulisan{
+.tulisanvalo{
     position: absolute;
     font-size:12pt;
     color:black;
@@ -75,11 +76,11 @@
     left: 50px;
     top: 50px;
 }
-.gambar-profil{
+.gambar-valo{
     left: 50%;
 }
 
-.ml{
+.valo{
     position: absolute;
     height: 15%;
     width: 25%;

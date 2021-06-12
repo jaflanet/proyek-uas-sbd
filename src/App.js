@@ -4,6 +4,7 @@ import './component/Login/index.css'
 import {Navbar} from './component'
 import {Footer} from './component'
 import axios from 'axios';
+import { useHistory } from 'react-router-dom'
 import { HomePages,
   HomeValoPages,
   HomePUBGPages,
@@ -15,10 +16,10 @@ return(
       <>
             <Navbar />
             <Switch>
-            <Route exact path="/" component={HomePages}/>
+            <Route exact path="/:username" component={HomePages}/>
             <Route exact path="/HomeValoPages" component={HomeValoPages}/> 
             <Route exact path="/HomePUBGPages" component={HomePUBGPages}/> 
-            <Route exact path="/HomeMLPages" component={HomeMLPages}/> 
+            <Route exact path="/HomeMLPages/:username" component={HomeMLPages}/> 
             <Route exact path="/ProfilePages" component={ProfilePages}/> 
             </Switch>
             <Footer /> 
