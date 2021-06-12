@@ -1,4 +1,4 @@
-.con-ML{
+.con-profil{
     background-image: url("../../assets/ProfileAsset/background.png");
     
     background-position: center;
@@ -6,7 +6,7 @@
     height: 100%;
     
 }
-  .background-FM{
+  .background-profil{
       position: relative;
     background-image: url("../../assets/ProfileAsset/logo_back.png");
 
@@ -18,7 +18,7 @@
 }  
 
 
-.warna{
+.warnaprofil{
     
     position: relative;
     text-align: center;
@@ -30,7 +30,7 @@
     background: rgba(10, 12, 16, 0.9);
     mix-blend-mode: normal;
 }
-.container-row{
+.container-profil{
     display: table;
     clear: both;
     height: 100%;
@@ -49,17 +49,17 @@
     
 }
 
-.profilml{
+.profilp{
     margin-left: -35%;
 
    
 }
-.player-column1{
+.columnprofil{
     left: 50%;
 
 }
 
-.tulisan{
+.tulisanprofil{
     position: absolute;
     font-size:12pt;
     color:black;
@@ -72,13 +72,7 @@
     left: 0%;
 }
 
-.ml{
-    position: absolute;
-    height: 15%;
-    width: 25%;
-    top: 10%;
-    right: 0%;
-}
+
 .tulisan2{
     position: absolute;
     font-size:24pt;

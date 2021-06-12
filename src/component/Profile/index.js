@@ -8,14 +8,14 @@ import axios from 'axios';
 
 const Profile= () => {
     return (
-        <div className="con-ML">
-        <div className="warna">
-        <div className="background-FM">
+        <div className="con-profil">
+        <div className="warnaprofil">
+        <div className="background-profil">
                
-                <div className="container-row">
+                <div className="container-profil">
                     
                         <div className="gambar-profil">
-                            <img src={gambar_profil} className="profilml"/> 
+                            <img src={gambar_profil} className="profilp"/> 
                             </div>
                     
                             <div className="tulisan">
@@ -39,10 +39,10 @@ const Profile= () => {
                                                
                                       
                 </div>
-               <div className="container-row">
+               <div className="container-profil">
                    
                        <div className="recentplayer">
-                           <img src={player} className="player-column1"/>
+                           <img src={player} className="columnprofil"/>
                        </div>
                    </div>
                    
