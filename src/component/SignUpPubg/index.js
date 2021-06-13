@@ -61,11 +61,13 @@ const SignUpPubg = () => {
                     <form method="post">
                         <div className="txt_field_signidPUBG">
                             <label className="idtaglabelPUBG">USERNAME PUBG</label>
+                           
                             <input type="text" required onChange={(e) => setUsernamepubg(e.target.value)}/>
                         </div>
 
                         <div className="txt_field_signPUBG">
                             <label>ROLE</label> 
+                            
                              <Select 
                             options={rolePUBG_options}
                             styles={customStyles}

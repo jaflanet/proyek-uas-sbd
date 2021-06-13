@@ -72,7 +72,6 @@ const SignUp = () => {
     const [region, setRegion] = useState()
     const [onlinetime, setOnlinetime] = useState()
     const [sex, setSex] = useState()
-    const [password, setPassword] = useState()
 
     // useEffect(() => {
         // let toggle = true;
@@ -85,7 +84,6 @@ const SignUp = () => {
                 region : region,
                 onlinetime : onlinetime,
                 gender : sex,
-                password : password
               }
               ).then(
                   alert('Data berhasil disimpan')
@@ -237,10 +235,6 @@ const SignUp = () => {
                             onChange={(event) => setSex(event.value)}
                           />
                             <label2>SEX</label2> 
-                        </div>
-                        <div className="txt_field_signup">
-                            <input type="password" required onChange={(e) => setPassword(e.target.value)} />
-                            <label1>PASSWORD</label1> 
                         </div>
                         <div className="submitButton_signup">
                             <button type="button"  onClick={() => getRequest()}>

@@ -38,7 +38,7 @@ const HomePUBG= () => {
     const [usernameweb, setUsernameweb] = useState()
     const [resultsss, setResultsss ] = useState();
     const [hasil1, setHasil1] = useState();
-    const [hasil2, setHasil2] = useState();
+
 
 
     const onRankChange = (e) => {
@@ -152,12 +152,15 @@ const HomePUBG= () => {
 
                     <div>
                         Hadi   
-                        {resultsss.map((data)=>{
+                        {resultsss.map((data, index)=>{
+                            if (index < 5){
                             return(
                                 <>
+                                
                                 {data.username} : {data.rank} : {data.onlinetime} <br />
                                 </>
                             )
+                            }
                         })}
                     </div>
                     </div>
