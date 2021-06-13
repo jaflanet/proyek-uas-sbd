@@ -52,7 +52,7 @@ const classes = useStyles();
                         </a>
                     </div>
                     <div className="col2">
-                        <a href="https://twitter.com/javgrandpa">
+                        <a href="https://twitter.com/JYPETWICE">
                             <img className="twitter" src={twitterLogo} alt="twitter"/>
                         </a>
                     </div>
