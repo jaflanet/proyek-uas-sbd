@@ -58,7 +58,7 @@ const SignUpPUBG = () => {
                 <form method="post">
                 <div className="txt_field_signidtagPUBG">
                         <label className="usernamelabelPUBG2">USERNAME PUBG</label> 
-                        <input type="text" required onChange={(e) => setUsernameweb(e.target.value)}/>
+                        <input type="text" required onChange={(e) => setUsernamepubg(e.target.value)}/>
                     </div>
                     <div className="txt_field_signPUBG">
                         <label>RANK</label>
