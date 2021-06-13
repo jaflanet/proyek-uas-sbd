@@ -83,100 +83,61 @@ const HomePUBG= () => {
     return (
         <>
         { loading ? <>Loading...</> :
-        <div className="HomePUBG">
-            <div className="warna-ml">
-                <div className="row1">
-                    <img src={tabel1} className="tab1"/>
-                    <div className="col1">
-                        <div className="tulisancol1">
-                            <label for="Rank">Rank</label>
-                        
-                        <div className="radio1">
-                            <div>
-                                
-                            <br></br>
-                            <Select 
-                            options={rank_option}
-                            styles={customStyles}
-                            isSearchable={true}
-                            onChange={(event) => onRankChange(event.value)}
-                            />
-                            <label>RANK</label> 
-                        </div>
-                       </div> 
-                    </div>
-                    <div className="col2">
-                    <div className="tulisancol2">
-                        
-                            <label for="Online">Online Time</label>
-
-                            <div className="radio2">
-                            <br></br>
-                            <Select 
-                            options={time_options}
-                            styles={customStyles}
-                            isSearchable={true}
-                            onChange={(event) => onTimeChange(event.value)}
-                            />
-                            <label>onlinetime</label> 
-                                 
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div className="col3">
-                    <div className="tulisancol3">
-                            <label for="Username">Username Web</label>
-                            
-                            <div className="formulir1">
-                            <br></br>
-                            <br></br>
-                            <input type="form" id="formulir" name="formu" onChange={(e) => onUsernameWeb(e.target.value)}/>
-                            <br></br>
-                             <label for="formulir">Input Your Username</label> 
-                             
-                             </div>
-                             <br></br>
-                             <button type="button" onClick={() => filterButton()}>Submit</button>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                <div className="row2">
-                    <div className="kotakbawah">
-                    <img src={tabel2} className="tab2"/>
-                    </div>
-                    <div className="tulisanr2">
-                    <label for="tamates">Teammates For You</label>
-
-                    <div>
-                        Hadi   
-                        {resultsss.map((data)=>{
-                            return(
-                                <>
-                                {data.username} : {data.rank} : {data.onlinetime} <br />
-                                </>
-                            )
-                        })}
-                    </div>
-                    </div>
-                    <div className="r2c1">
-                        
-                        
-                    </div>
-                    <div className="r2c2">
-
-                        
-                    </div>
-                </div>
+        <div className='PUBGMainContainer'>
+          <div className='gradient-PUBG'>  
+        <div className='PUBGLeftSidebarContainer'>
+        <div className='PUBGListCol'> 
+        <label for="Rank" ><h1 className="tulisancolPUBG1">Rank</h1></label>
+            <div className="radioPUBG1">
+                    <Select 
+                    options={rank_option}
+                    styles={customStyles}
+                    isSearchable={true}
+                    onChange={(event) => onRankChange(event.value)}
+                    maxMenuHeight={100}/>
             </div>
-            </div>
-            
         </div>
-    
-            
+        <div className='PUBGListCol'> 
+        <label for="Online"><h1 className="tulisancolPUBG1">Online Time</h1></label>
+            <div className="radioPUBG1">
+                <Select 
+                options={time_options}
+                styles={customStyles}
+	            isSearchable={true}
+	            onChange={(event) => onTimeChange(event.value)}
+	            maxMenuHeight={100}/> 
+            </div>
+        </div>
+        <div className='PUBGListCol'> 
+        <label for="Username" ><h1 className="tulisancolPUBG1">Username</h1></label>
+        <div className="formulirPUBG1">
+        <input type="form" id="formulir" name="formu" placeholder="input your web username" className="input-PUBG" nChange={(e) => onUsernameWeb(e.target.value)}/>                         
+        </div>
         
+        </div> 
+        <div>
+        <button type="button" onClick={() => filterButton()}>Submit</button>  
+        </div>
+        </div>
+        
+        <div className='PUBGMainContentContainer'>
+        <div>
+            <label for="teamates"><h1 className="tulisancolPUBG1">Teammates For You</h1></label>
+        </div>
+        <div>
+            {resultsss.map((data, index)=>{
+            if (index < 5){
+            return(
+            <>
+            {data.username} : {data.rank} : {data.onlinetime} <br />
+            </>
+            )
+                }
+            })}
+        </div>
+        </div>
+        </div>
+      </div>
          }
         </>
     )
