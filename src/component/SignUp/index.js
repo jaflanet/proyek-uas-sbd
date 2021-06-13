@@ -86,7 +86,7 @@ const SignUp = () => {
                 gender : sex,
               }
               ).then(
-                  alert('Data berhasil disimpan'),
+                  alert('Data User berhasil disimpan'),
                 //   console.log(response)
 
               )

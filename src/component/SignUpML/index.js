@@ -51,7 +51,7 @@ const SignUpML = () => {
               }
               ).then(
                 //   console.log(res),
-                  alert('Data berhasil disimpan')
+                  alert('Data ML berhasil disimpan')
               )
               }
 

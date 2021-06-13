@@ -47,7 +47,7 @@ const SignUpPUBG = () => {
               }
               ).then(
                 //   console.log(res),
-                  alert('Data berhasil disimpan')
+                  alert('Data PUBG berhasil disimpan')
               )
               }
 
