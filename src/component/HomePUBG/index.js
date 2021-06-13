@@ -125,11 +125,22 @@ const HomePUBG= () => {
             <label for="teamates"><h1 className="tulisancolPUBG1">Teammates For You</h1></label>
         </div>
         <div>
+        <div className="col-hasiljudul"> <label className="col-dalem-tulisan"> <h4>Username</h4> </label></div>
+            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"> <h4>Role</h4> </label></div>
+            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"><h4>Rank</h4></label> </div>
+            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"><h5>Online Time</h5> </label></div>
+            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"><h4>Username</h4></label></div>
+            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"><h4>Role</h4></label></div>
+            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"><h4>Rank</h4></label> </div>
+            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"><h5>Online Time</h5> </label></div>
             {resultsss.map((data, index)=>{
             if (index < 5){
             return(
             <>
-            {data.username} : {data.rank} : {data.onlinetime} <br />
+            <div className="col-hasil1"> <label className="col-dalem-tulisan">{data.usernamepubg} </label></div>
+            <div className="col-hasil3"> <label className="col-dalem-tulisan">{data.role}</label> </div>
+            <div className="col-hasil4"> <label className="col-dalem-tulisan">{data.rank}</label> </div>
+            <div className="col-hasil2"> <label className="col-dalem-tulisan">{data.onlinetime} </label></div>
             </>
             )
                 }
