@@ -11,7 +11,9 @@ import logo_web from '../../assets/NavbarAsset/logo_web_white.png'
 import logo_Valo from '../../assets/NavbarAsset/valo_logo_white.png'
 import logo_PUBG from '../../assets/NavbarAsset/pubg_logo_white.png'
 import logo_ML from '../../assets/NavbarAsset/ml_logo_white.png'
+import logo_Add from '../../assets/NavbarAsset/add-account.png'
 import "./index.css"
+import { FaBold } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
@@ -33,7 +35,7 @@ const Navbar = () => {
           </NavBtnLink>
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to='/SignUpPages'>PROFILE</NavBtnLink>
+          <NavBtnLink to='/SignUpPages'><img src={logo_Add} alt='ML' />Add an account</NavBtnLink>
         </NavBtn>
       </Nav>
     </>

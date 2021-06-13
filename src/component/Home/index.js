@@ -68,7 +68,7 @@ function Home() {
         }}
       >
         <Fade in={open}>
-          <div className={classes.paper}>
+          <div className={classes.transparent}>
             <AboutUs />
           </div>
         </Fade>
