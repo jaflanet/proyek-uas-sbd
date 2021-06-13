@@ -35,7 +35,7 @@ const Navbar = () => {
           </NavBtnLink>
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to='/SignUpPages'><img src={logo_Add} alt='ML' />Add an account</NavBtnLink>
+          <NavBtnLink to='/SignUpPages'><img src={logo_Add} alt='ML' />Add Your Own Data</NavBtnLink>
         </NavBtn>
       </Nav>
     </>

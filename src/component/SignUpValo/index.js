@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './index.css'
 import Select from 'react-select'
+import axios from 'axios';
 
 const rank_options = [
     { value: 'Radiant', label: 'Radiant'},
@@ -47,6 +48,32 @@ const customStyles = {
   };
 
 const SignUpValo = () => {
+    const [iddantag, setIddantag] = useState()
+    const [rank, setRank] = useState()
+    const [favoriteagents, setFavoriteagents] = useState()
+    const [role, setRole] = useState()
+    const [usernameweb, setUsernameweb] = useState() 
+
+        const getRequest = async () => {
+              const response = await axios.post("http://localhost:6970/valo/", 
+              {
+                iddantag : iddantag,
+                rank : rank,
+                favoriteagents : favoriteagents,
+                role : role,
+                usernameweb : usernameweb
+
+              }
+              ).then(
+                  alert('Data berhasil disimpan')
+                //   console.log('sukses')
+
+              ).then(
+                  window.location= "http://localhost:3000/"
+              )
+              }
+
+
     return (
         <>
            <div className="modalBox">
@@ -54,7 +81,7 @@ const SignUpValo = () => {
                     <form method="post">
                         <div className="txt_field_signidtag">
                             <label className="idtaglabel">ID#TAG</label>
-                            <input type="text" required/>
+                            <input type="text" required onChange={(e) => setIddantag(e.target.value)}/>
                         </div>
                         <div className="txt_field_signvaloselect">
                             <label>RANK</label>
@@ -62,6 +89,7 @@ const SignUpValo = () => {
                             options={rank_options}
                             styles={customStyles}
                             isSearchable={true}
+                            onChange={(event) => setRank(event.value)}
                             />
                         </div>
                         <div className="txt_field_signvaloselect">
@@ -70,6 +98,7 @@ const SignUpValo = () => {
                             options={agent_options}
                             styles={customStyles}
                             isSearchable={true}
+                            onChange={(event) => setFavoriteagents(event.value)}
                             />
                         </div>
                         <div className="txt_field_signvaloselect">
@@ -78,14 +107,15 @@ const SignUpValo = () => {
                             options={role_options}
                             styles={customStyles}
                             isSearchable={true}
+                            onChange={(event) => setRole(event.value)}
                             />
                         </div>
                         <div className="txt_field_signusername">
                             <label className="usernamelabel">USERNAME</label> 
-                            <input type="text" required/>
+                            <input type="text" required onChange={(e) => setUsernameweb(e.target.value)}/>
                         </div>
                         <div className="submitButton_signvalo">
-                            <button type="button">
+                            <button type="button" onClick={() => getRequest()}>
                                 <img src="https://i.ibb.co/M8bpJzM/Component-2.png" alt="submit" />  
                             </button>
                         </div>

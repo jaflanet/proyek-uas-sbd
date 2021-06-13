@@ -1,11 +1,23 @@
 .Container-signup{
     overflow: hidden;
-    background: #EEFCFF;
+    background: url("../../assets/ProfileAsset/bg-signup.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     }
+
+    .Container-signup-bg{
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(261.91deg, rgba(19, 21, 32, 0.8) 44.16%, rgba(70, 162, 158, 0.3) 95.71%);
+      animation: gradient 15s ease infinite;
+      background-size: 400% 400%;
+      }
     
     .page-container-signup{
       display: flex;
@@ -17,8 +29,9 @@
       flex: 1;
     }
     
+    
       .Wrapper-signup{
-        background: linear-gradient(360deg, #46A29E 2.05%, #202733 50.88%, #0A0C10 96.97%);
+        background: transparent;
         width: 100%;
         height: 100%;
         display: flex;
@@ -33,18 +46,18 @@
 .boxchoice{
     position: relative;
     right: 360px;
-    top: 50px;
+    top: 90px;
     border-radius: 35px;
-    height: 710px;
+    height: 650px;
     width:  560px;
     background-color: rgba(102,252,240,0.78);
     font-size:23px;
-    margin-bottom: 85px;
+    margin-bottom: 145px;
   }
   
   .boxchoice h1{
     position: relative;
-    bottom: 50px;
+    bottom: 30px;
     left: 112px;
     font-size:50pt;
     color:#FFFFFF;
@@ -53,7 +66,7 @@
   
   form .txt_field_signup{
     position: relative;
-    left: 70px;
+    left: 60px;
     bottom: 85px;
     margin: 30px 0;
   }
@@ -168,7 +181,7 @@
   .submitButton_signup{
     position: relative;
     bottom: 100px;
-    left: 382px;
+    left: 370px;
     transform: scale(0.85);
     background: none;
     border: none;
@@ -193,7 +206,7 @@
 
 .PENCETAN{
   position: relative;
-  top: 600px;
+  top: 580px;
   right: 470px;
   align-items: center;
 }
@@ -227,3 +240,14 @@
   background-color: #46A29E;
 }
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

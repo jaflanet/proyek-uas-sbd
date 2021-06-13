@@ -6,7 +6,7 @@ form .txt_field_signidPUBG{
 
 .txt_field_signidPUBG input{
     position: relative;
-    left: 37px;
+    right: 74px;
     width : 425px;
     height : 30px;
     font-size: 16px;
@@ -27,11 +27,14 @@ form .txt_field_signusernamePUBG{
 }
 
 .txt_field_signusernamePUBG input{
+    position: relative;
+    right: 36px;
     width : 425px;
     height : 30px;
     font-size: 16px;
     border: 1px solid #cacaca;
     border-radius: 3px;
+
 }
 .usernamelabelPUBG{
     position: relative;

@@ -72,7 +72,6 @@ const SignUp = () => {
     const [region, setRegion] = useState()
     const [onlinetime, setOnlinetime] = useState()
     const [sex, setSex] = useState()
-    const [password, setPassword] = useState()
 
     // useEffect(() => {
         // let toggle = true;
@@ -85,7 +84,6 @@ const SignUp = () => {
                 region : region,
                 onlinetime : onlinetime,
                 gender : sex,
-                password : password
               }
               ).then(
                   alert('Data berhasil disimpan')
@@ -131,6 +129,7 @@ const SignUp = () => {
     return (
         <>
         <div className="Container-signup">
+        <div className="Container-signup-bg">
             <div className="Wrapper-signup">
                 <div className="logo_signup">
                     <img src={logo_fm} className="logofm" alt="logo harusnye"/>
@@ -238,16 +237,13 @@ const SignUp = () => {
                           />
                             <label2>SEX</label2> 
                         </div>
-                        <div className="txt_field_signup">
-                            <input type="password" required onChange={(e) => setPassword(e.target.value)} />
-                            <label1>PASSWORD</label1> 
-                        </div>
                         <div className="submitButton_signup">
                             <button type="button"  onClick={() => getRequest()}>
                                 <img src="https://i.ibb.co/M8bpJzM/Component-2.png" alt="submit" />  
                             </button>
                         </div>
                     </form>
+                </div>
                 </div>
                 </div>
             </div>

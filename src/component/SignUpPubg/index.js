@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './index.css'
 import Select from 'react-select'
+import axios from 'axios';
 
 const rankPUBG_options = [
     { value: 'Conqueror', label: 'Conqueror'},
@@ -30,37 +31,67 @@ const customStyles = {
   };
 
 const SignUpPubg = () => {
+    const [usernamepubg, setUsernamepubg] = useState()
+    const [role, setRole] = useState()
+    const [rank, setRank] = useState()
+    const [usernameweb, setUsernameweb] = useState()
+
+        const getRequest = async () => {
+               await axios.post("http://localhost:6970/PUBG/", 
+              {
+                usernamepubg : usernamepubg,
+                role : role,
+                rank : rank,
+                usernameweb : usernameweb
+
+              }
+              ).then(
+                  alert('Data berhasil disimpan')
+                  
+
+              ).then(
+                  window.location= "http://localhost:3000/"
+              )
+              }
+
     return (
         <>
            <div className="modalBox">
                     <h1>PUBG</h1>
                     <form method="post">
                         <div className="txt_field_signidPUBG">
-                            <label className="idtaglabelPUBG">ID</label>
-                            <input type="text" required/>
+                            <label className="idtaglabelPUBG">USERNAME PUBG</label>
+                           
+                            <input type="text" required onChange={(e) => setUsernamepubg(e.target.value)}/>
                         </div>
+
+                        <div className="txt_field_signPUBG">
+                            <label>ROLE</label> 
+                            
+                             <Select 
+                            options={rolePUBG_options}
+                            styles={customStyles}
+                            isSearchable={true}
+                            onChange={(event) => setRole(event.value)}
+                            />
+                        </div>
+
                         <div className="txt_field_signPUBG">
                             <label>RANK</label>
                             <Select 
                             options={rankPUBG_options}
                             styles={customStyles}
                             isSearchable={true}
+                            onChange={(event) => setRank(event.value)}
                             />
                         </div>
-                        <div className="txt_field_signPUBG">
-                            <label>ROLE</label> 
-                             <Select 
-                            options={rolePUBG_options}
-                            styles={customStyles}
-                            isSearchable={true}
-                            />
-                        </div>
+
                         <div className="txt_field_signusernamePUBG">
-                            <label className="usernamelabelPUBG">USERNAME</label> 
-                            <input type="text" required/>
+                            <label className="usernamelabelPUBG">USERNAME WEB</label> 
+                            <input type="text" required onChange={(e) => setUsernameweb(e.target.value)}/>
                         </div>
                         <div className="submitButton_signPUBG">
-                            <button type="button">
+                            <button type="button" onClick={() => getRequest()}>
                                 <img src="https://i.ibb.co/M8bpJzM/Component-2.png" alt="submit" />  
                             </button>
                         </div>

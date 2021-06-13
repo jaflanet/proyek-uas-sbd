@@ -38,7 +38,7 @@ const HomePUBG= () => {
     const [usernameweb, setUsernameweb] = useState()
     const [resultsss, setResultsss ] = useState();
     const [hasil1, setHasil1] = useState();
-    const [hasil2, setHasil2] = useState();
+
 
 
     const onRankChange = (e) => {
