@@ -88,7 +88,7 @@ const HomeML= () => {
         <div className='MLLeftSidebarContainer'>
             <div className="col-atas-1-ML">
         <div className='MLListCol'> 
-        <label for="Rank" ><h1 className="tulisancolML1">Rank</h1></label>
+        <label for="Rank" ><h1 className="tulisancolML1">RANK</h1></label>
             <div className="radioML1">
                     <Select 
                     options={rank_option}
@@ -99,7 +99,7 @@ const HomeML= () => {
             </div>
         </div>
         <div className='MLListCol'> 
-        <label for="Online"><h1 className="tulisancolML1">Online Time</h1></label>
+        <label for="Online"><h1 className="tulisancolML1">ONLINE TIME</h1></label>
             <div className="radioML1">
                 <Select 
                 options={time_options}
@@ -110,7 +110,7 @@ const HomeML= () => {
             </div>
         </div>
         <div className='MLListCol'> 
-        <label for="Username" ><h1 className="tulisancolML1">Username</h1></label>
+        <label for="Username" ><h1 className="tulisancolML1">USERNAME</h1></label>
         <div className="formulirML1">
         <input type="form" id="formulir" name="formu" placeholder="input your web username" className="input-ML" onChange={(e) => onUsernameWeb(e.target.value)}/>                         
         </div>

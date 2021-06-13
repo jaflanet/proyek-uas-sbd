@@ -87,7 +87,7 @@ const HomeValo= () => {
         <div className='valoLeftSidebarContainer'>
             <div className='col-atas-1'>
         <div className='valoListCol'> 
-        <label for="Rank" ><h1 className="tulisancolvalo1">Rank</h1></label>
+        <label for="Rank" ><h1 className="tulisancolvalo1">RANK</h1></label>
             <div className="radiovalo1">
                     <Select 
                     options={rank_option}
@@ -98,7 +98,7 @@ const HomeValo= () => {
             </div>
         </div>
         <div className='valoListCol'> 
-        <label for="Online"><h1 className="tulisancolvalo1">Online Time</h1></label>
+        <label for="Online"><h1 className="tulisancolvalo1">ONLINE TIME</h1></label>
             <div className="radiovalo1">
                 <Select 
                 options={time_options}
@@ -109,7 +109,7 @@ const HomeValo= () => {
             </div>
         </div>
         <div className='valoListCol'> 
-        <label for="Username" ><h1 className="tulisancolvalo1">Username</h1></label>
+        <label for="Username" ><h1 className="tulisancolvalo1">USERNAME</h1></label>
         <div className="formulirvalo1">
         <input type="form" id="formulir" name="formu" placeholder="input your web username" className="input-valo" onChange={(e) => onUsernameWeb(e.target.value)}/>                         
         </div>

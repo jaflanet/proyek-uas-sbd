@@ -74,6 +74,10 @@
     margin-left: 5%;
 }
 
+.MLListCol h1{
+  font-weight: 700;
+}
+
 .MLMainContentContainer
 {
     margin: 0 auto;
@@ -105,6 +109,12 @@
     width: 60%;
     margin-left: 23%;
     height: 15%;
+}
+
+.formulirML1 input{
+  border-radius: 5px;
+  height: 35px;
+  width: 330px;
 }
 
 .input-ML{

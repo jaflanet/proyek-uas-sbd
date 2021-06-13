@@ -90,7 +90,7 @@ const HomePUBG= () => {
                 
             
         <div className='PUBGListCol'> 
-        <label for="Rank" ><h1 className="tulisancolPUBG1">Rank</h1></label>
+        <label for="Rank" ><h1 className="tulisancolPUBG1">RANK</h1></label>
             <div className="radioPUBG1">
                     <Select 
                     options={rank_option}
@@ -101,7 +101,7 @@ const HomePUBG= () => {
             </div>
         </div>
         <div className='PUBGListCol'> 
-        <label for="Online"><h1 className="tulisancolPUBG1">Online Time</h1></label>
+        <label for="Online"><h1 className="tulisancolPUBG1">ONLINE TIME</h1></label>
             <div className="radioPUBG1">
                 <Select 
                 options={time_options}
@@ -112,7 +112,7 @@ const HomePUBG= () => {
             </div>
         </div>
         <div className='PUBGListCol'> 
-        <label for="Username" ><h1 className="tulisancolPUBG1">Username Web</h1></label>
+        <label for="Username" ><h1 className="tulisancolPUBG1">USERNAME WEB</h1></label>
         <div className="formulirPUBG1">
         <input type="form" id="formulir" name="formu" placeholder="input your web username" className="input-PUBG" onChange={(e) => onUsernameWeb(e.target.value)}/>                         
         </div>
