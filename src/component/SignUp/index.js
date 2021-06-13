@@ -246,8 +246,6 @@ const SignUp = () => {
                             <button type="button"  onClick={() => getRequest()}>
                                 <img src="https://i.ibb.co/M8bpJzM/Component-2.png" alt="submit" />  
                             </button>
-
-                            
                         </div>
                     </form>
                 </div>

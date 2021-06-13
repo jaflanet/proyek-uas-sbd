@@ -170,9 +170,16 @@
     bottom: 100px;
     left: 382px;
     transform: scale(0.85);
+    background: none;
+    border: none;
   }
 
-.submitButton_signup input:hover{
+  .submitButton_signup button{
+    background: none;
+    border: none;
+  }
+
+.submitButton_signup button:hover{
   transform: scale(1.06);
   transition: all 0.2s ease-in-out;
 }
@@ -219,3 +226,4 @@
 .button:focus{
   background-color: #46A29E;
 }
+
