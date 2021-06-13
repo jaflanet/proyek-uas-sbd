@@ -85,6 +85,7 @@ const HomeValo= () => {
         <div className='valoMainContainer'>
           <div className='gradient-valo'>  
         <div className='valoLeftSidebarContainer'>
+            <div lassName='col-atas-1'>
         <div className='valoListCol'> 
         <label for="Rank" ><h1 className="tulisancolvalo1">Rank</h1></label>
             <div className="radiovalo1">
@@ -113,9 +114,10 @@ const HomeValo= () => {
         <input type="form" id="formulir" name="formu" placeholder="input your web username" className="input-valo" onChange={(e) => onUsernameWeb(e.target.value)}/>                         
         </div>
         
+        </div>
         </div> 
-        <div>
-        <button type="button" onClick={() => filterButton()}>Submit</button>  
+        <div className='col-atas-1'>
+        <button type="button" onClick={() => filterButton()} className="button-valo">Submit</button>  
         </div>
         </div>
         
@@ -124,11 +126,22 @@ const HomeValo= () => {
             <label for="teamates"><h1 className="tulisancolvalo1">Teammates For You</h1></label>
         </div>
         <div>
+            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"> <h4>Username</h4> </label></div>
+            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"> <h4>Role</h4> </label></div>
+            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"><h4>Rank</h4></label> </div>
+            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"><h5>Online Time</h5> </label></div>
+            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"><h4>Username</h4></label></div>
+            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"><h4>Role</h4></label></div>
+            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"><h4>Rank</h4></label> </div>
+            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"><h5>Online Time</h5> </label></div>
             {resultsss.map((data, index)=>{
             if (index < 5){
             return(
             <>
-            {data.username} : {data.rank} : {data.onlinetime} <br />
+            <div className="col-hasil1"> <label className="col-dalem-tulisan">{data.iddantag} </label></div>
+            <div className="col-hasil3"> <label className="col-dalem-tulisan">{data.role}</label> </div>
+            <div className="col-hasil4"> <label className="col-dalem-tulisan">{data.rank}</label> </div>
+            <div className="col-hasil2"> <label className="col-dalem-tulisan">{data.onlinetime} </label></div>
             </>
             )
                 }
