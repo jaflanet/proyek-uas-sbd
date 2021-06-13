@@ -85,7 +85,7 @@ const HomeValo= () => {
         <div className='valoMainContainer'>
           <div className='gradient-valo'>  
         <div className='valoLeftSidebarContainer'>
-            <div lassName='col-atas-1'>
+            <div className='col-atas-1'>
         <div className='valoListCol'> 
         <label for="Rank" ><h1 className="tulisancolvalo1">Rank</h1></label>
             <div className="radiovalo1">

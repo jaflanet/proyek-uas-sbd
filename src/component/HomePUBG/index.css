@@ -122,3 +122,107 @@
 		background-position: 0% 50%;
 	}
 }
+.col-hasil-PUBG1{
+  float: left;
+  margin-left: 5%;
+  background-color: red;
+  color: azure;
+  margin-bottom: 2%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 7%;
+  height: 6vh;
+  text-align: center;
+  padding-top: 1%;
+  display: flex;
+  font-size: 10pt;
+}
+.col-hasil-PUBG2{
+  float: left;
+  margin-left: 5%;
+  background-color: green;
+  color: azure;
+  margin-bottom: 2%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 7%;
+  height: 6vh;
+  text-align: center;
+  padding-top: 1%;
+  display: flex;
+  font-size: 10pt;
+}
+.col-hasil-PUBG3{
+  float: left;
+  margin-left: 5%;
+  background-color: #DBA800;
+  color: azure;
+  margin-bottom: 2%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 7%;
+  height: 6vh;
+  text-align: center;
+  padding-top: 1%;
+  display: flex;
+  font-size: 10pt;
+}
+.col-hasil-PUBG4{
+  float: left;
+  margin-left: 5%;
+  background-color: #00389F;
+  color: azure;
+  margin-bottom: 2%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 7%;
+  height: 6vh;
+  text-align: center;
+  padding-top: 1%;
+  display: flex;
+  font-size: 10pt;
+}
+.col-hasiljudulPUBG{
+  float: left;
+  margin-left: 5%;
+  background-color: transparent;
+  color: azure;
+  margin-bottom: 2%;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 7%;
+  height: 6vh;
+  text-align: center;
+  padding-top: 1%;
+  display: flex;
+  margin-bottom: 2%;
+}
+.col-dalem-tulisan-PUBGL{
+  margin-top: 20%;
+  margin:0 auto;
+}
+
+.col-atas-1-PUBG{
+  width: 100%;
+  display: flex;
+}
+.buttonPUBG{
+  border-radius: 4px;
+    background: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    display: block;
+    width: 15%;
+    height: 5vh;
+    
+}
+.buttonPUBG:hover{
+  transition: all 0.3s ease-in-out;
+  background: #1f2833;
+  color: white;
+}

@@ -79,7 +79,7 @@ const SignUpPUBG = () => {
                         />
                     </div>
                     <div className="txt_field_signusernamePUBG">
-                        <label className="usernamelabelML">USERNAME</label> 
+                        <label className="usernamelabelPUBG">USERNAME</label> 
                         <input type="text" required onChange={(e) => setUsernameweb(e.target.value)}/>
                     </div>
                     <div className="submitButton_signPUBG">

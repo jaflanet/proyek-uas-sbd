@@ -86,6 +86,7 @@ const HomeML= () => {
         <div className='MLMainContainer'>
           <div className='gradient-ML'>  
         <div className='MLLeftSidebarContainer'>
+            <div className="col-atas-1-ML">
         <div className='MLListCol'> 
         <label for="Rank" ><h1 className="tulisancolML1">Rank</h1></label>
             <div className="radioML1">
@@ -115,8 +116,9 @@ const HomeML= () => {
         </div>
         
         </div> 
-        <div>
-        <button type="button" onClick={() => filterButton()}>Submit</button>  
+        </div> 
+        <div className="col-atas-1-ML">
+        <button type="button" onClick={() => filterButton()}className="buttonML">Submit</button>  
         </div>
         </div>
         
@@ -125,22 +127,22 @@ const HomeML= () => {
             <label for="teamates"><h1 className="tulisancolML1">Teammates For You</h1></label>
         </div>
         <div>
-            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"> <h4>ID</h4> </label></div>
-            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"> <h4>Role</h4> </label></div>
-            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"><h4>Rank</h4></label> </div>
-            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"><h5>Online Time</h5> </label></div>
-            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"><h4>ID</h4></label></div>
-            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"><h4>Role</h4></label></div>
-            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"><h4>Rank</h4></label> </div>
-            <div className="col-hasiljudul"> <label className="col-dalem-tulisan"><h5>Online Time</h5> </label></div>
+            <div className="col-hasiljudulML"> <label className="col-dalem-tulisan"> <h4>ID</h4> </label></div>
+            <div className="col-hasiljudulML"> <label className="col-dalem-tulisan"> <h4>Role</h4> </label></div>
+            <div className="col-hasiljudulML"> <label className="col-dalem-tulisan"><h4>Rank</h4></label> </div>
+            <div className="col-hasiljudulML"> <label className="col-dalem-tulisan"><h5>Online Time</h5> </label></div>
+            <div className="col-hasiljudulML"> <label className="col-dalem-tulisan"><h4>ID</h4></label></div>
+            <div className="col-hasiljudulML"> <label className="col-dalem-tulisan"><h4>Role</h4></label></div>
+            <div className="col-hasiljudulML"> <label className="col-dalem-tulisan"><h4>Rank</h4></label> </div>
+            <div className="col-hasiljudulML"> <label className="col-dalem-tulisan"><h5>Online Time</h5> </label></div>
             {resultsss.map((data, index)=>{
             if (index < 5){
             return(
             <>
-            <div className="col-hasil1"> <label className="col-dalem-tulisan">{data.id} </label></div>
-            <div className="col-hasil3"> <label className="col-dalem-tulisan">{data.role}</label> </div>
-            <div className="col-hasil4"> <label className="col-dalem-tulisan">{data.rank}</label> </div>
-            <div className="col-hasil2"> <label className="col-dalem-tulisan">{data.onlinetime} </label></div>
+            <div className="col-hasil-ML1"> <label className="col-dalem-tulisan">{data.id} </label></div>
+            <div className="col-hasil-ML3"> <label className="col-dalem-tulisan">{data.role}</label> </div>
+            <div className="col-hasil-ML4"> <label className="col-dalem-tulisan">{data.rank}</label> </div>
+            <div className="col-hasil-ML2"> <label className="col-dalem-tulisan">{data.onlinetime} </label></div>
             </>
             )
                 }
