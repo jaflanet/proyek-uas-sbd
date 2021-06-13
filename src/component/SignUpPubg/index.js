@@ -47,7 +47,7 @@ const SignUpPUBG = () => {
               }
               ).then(
                 //   console.log(res),
-                  alert('Data berhasil disimpan')
+                  alert('Data PUBG berhasil disimpan')
               )
               }
 
@@ -56,8 +56,8 @@ const SignUpPUBG = () => {
             <div className="modalBox">
                 <h1>PUBG</h1>
                 <form method="post">
-                    <div className="txt_field_signusernamePUBG{">
-                        <label className="usernamelabelML">Username PUBG</label>
+                <div className="txt_field_signidtagPUBG">
+                        <label className="usernamelabelPUBG2">USERNAME PUBG</label> 
                         <input type="text" required onChange={(e) => setUsernamepubg(e.target.value)}/>
                     </div>
                     <div className="txt_field_signPUBG">
@@ -78,7 +78,7 @@ const SignUpPUBG = () => {
                         onChange={(event) => setRole(event.value)}
                         />
                     </div>
-                    <div className="txt_field_signusernamePUBG">
+                    <div className="txt_field_signusername">
                         <label className="usernamelabelPUBG">USERNAME</label> 
                         <input type="text" required onChange={(e) => setUsernameweb(e.target.value)}/>
                     </div>

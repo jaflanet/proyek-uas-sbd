@@ -40,7 +40,7 @@ const SignUpML = () => {
     const [usernameweb, setUsernameweb] = useState()
 
         const getRequest = async () => {
-            await axios.post("http://localhost:6970/ML/", 
+            await axios.post("https://backend-findmates.herokuapp.com/ML/", 
               {
                 id : id,
                 usernameml : usernameml,
@@ -51,7 +51,7 @@ const SignUpML = () => {
               }
               ).then(
                 //   console.log(res),
-                  alert('Data berhasil disimpan')
+                  alert('Data ML berhasil disimpan')
               )
               }
 

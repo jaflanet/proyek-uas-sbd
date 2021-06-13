@@ -77,7 +77,7 @@ const SignUp = () => {
         // let toggle = true;
 
         const getRequest = async () => {
-              const response = await axios.post("https://backend-findmates.herokuapp.com/signup/", 
+              await axios.post("https://backend-findmates.herokuapp.com/signup/", 
               {
                 username : username,
                 age : age,
@@ -86,7 +86,7 @@ const SignUp = () => {
                 gender : sex,
               }
               ).then(
-                  alert('Data berhasil disimpan'),
+                  alert('Data User berhasil disimpan'),
                 //   console.log(response)
 
               )

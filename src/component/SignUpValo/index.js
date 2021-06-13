@@ -65,11 +65,9 @@ const SignUpValo = () => {
 
               }
               ).then(
-                  alert('Data berhasil disimpan')
+                  alert('Data Valo berhasil disimpan')
                 //   console.log('sukses')
 
-              ).then(
-                  window.location= "http://localhost:3000/"
               )
               }
 
