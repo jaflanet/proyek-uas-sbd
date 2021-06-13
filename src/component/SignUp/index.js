@@ -77,7 +77,7 @@ const SignUp = () => {
         // let toggle = true;
 
         const getRequest = async () => {
-              const response = await axios.post("https://backend-findmates.herokuapp.com/signup/", 
+              await axios.post("https://backend-findmates.herokuapp.com/signup/", 
               {
                 username : username,
                 age : age,
