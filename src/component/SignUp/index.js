@@ -86,11 +86,9 @@ const SignUp = () => {
                 gender : sex,
               }
               ).then(
-                  alert('Data berhasil disimpan')
-                //   console.log('sukses')
+                  alert('Data berhasil disimpan'),
+                //   console.log(response)
 
-              ).then(
-                  window.location= "http://localhost:3000/"
               )
             //   if(toggle){
             //     console.log(response)

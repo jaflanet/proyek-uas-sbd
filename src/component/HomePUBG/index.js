@@ -109,9 +109,9 @@ const HomePUBG= () => {
             </div>
         </div>
         <div className='PUBGListCol'> 
-        <label for="Username" ><h1 className="tulisancolPUBG1">Username</h1></label>
+        <label for="Username" ><h1 className="tulisancolPUBG1">Username Web</h1></label>
         <div className="formulirPUBG1">
-        <input type="form" id="formulir" name="formu" placeholder="input your web username" className="input-PUBG" nChange={(e) => onUsernameWeb(e.target.value)}/>                         
+        <input type="form" id="formulir" name="formu" placeholder="input your web username" className="input-PUBG" onChange={(e) => onUsernameWeb(e.target.value)}/>                         
         </div>
         
         </div> 

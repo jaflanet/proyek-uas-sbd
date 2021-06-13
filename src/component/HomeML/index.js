@@ -111,7 +111,7 @@ const HomeML= () => {
         <div className='MLListCol'> 
         <label for="Username" ><h1 className="tulisancolML1">Username</h1></label>
         <div className="formulirML1">
-        <input type="form" id="formulir" name="formu" placeholder="input your web username" className="input-ML" nChange={(e) => onUsernameWeb(e.target.value)}/>                         
+        <input type="form" id="formulir" name="formu" placeholder="input your web username" className="input-ML" onChange={(e) => onUsernameWeb(e.target.value)}/>                         
         </div>
         
         </div> 

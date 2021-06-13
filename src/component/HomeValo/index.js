@@ -110,7 +110,7 @@ const HomeValo= () => {
         <div className='valoListCol'> 
         <label for="Username" ><h1 className="tulisancolvalo1">Username</h1></label>
         <div className="formulirvalo1">
-        <input type="form" id="formulir" name="formu" placeholder="input your web username" className="input-valo" nChange={(e) => onUsernameWeb(e.target.value)}/>                         
+        <input type="form" id="formulir" name="formu" placeholder="input your web username" className="input-valo" onChange={(e) => onUsernameWeb(e.target.value)}/>                         
         </div>
         
         </div> 

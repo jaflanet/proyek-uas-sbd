@@ -40,7 +40,7 @@ const SignUpML = () => {
     const [usernameweb, setUsernameweb] = useState()
 
         const getRequest = async () => {
-              const response = await axios.post("http://localhost:6970/ML/", 
+            await axios.post("http://localhost:6970/ML/", 
               {
                 id : id,
                 usernameml : usernameml,
@@ -50,11 +50,8 @@ const SignUpML = () => {
 
               }
               ).then(
+                //   console.log(res),
                   alert('Data berhasil disimpan')
-                //   console.log('sukses')
-
-              ).then(
-                  window.location= "http://localhost:3000/"
               )
               }
 
