@@ -4,12 +4,13 @@ form .txt_field_signidPUBG{
     margin-bottom: 3px;
 }
 
-.txt_field_signidPUBG input{ 
+.txt_field_signidtagPUBG input{ 
     width : 425px;
     height : 30px;
     font-size: 16px;
     border: 1px solid #cacaca;
     border-radius: 3px;
+    margin-right: 20%;
 }
 .idtaglabelPUBG{
     position: relative;
@@ -18,10 +19,11 @@ form .txt_field_signidPUBG{
 }
 
 form .txt_field_signusernamePUBG{
-    position: relative;
-    right: 82px;
-    margin-bottom: 3px;
-    top: 27px;
+    width : 425px;
+    height : 30px;
+    font-size: 16px;
+    border: 1px solid #cacaca;
+    border-radius: 3px;
 }
 
 .txt_field_signusernamePUBG input{
@@ -30,12 +32,17 @@ form .txt_field_signusernamePUBG{
     font-size: 16px;
     border: 1px solid #cacaca;
     border-radius: 3px;
-
 }
 .usernamelabelPUBG{
     position: relative;
     bottom:30px;
     left: 83px;
+}
+
+.usernamelabelPUBG2{
+    position: relative;
+    bottom:0px;
+    left: 0px;
 }
 
 .submitButton_signPUBG button{
@@ -52,4 +59,12 @@ form .txt_field_signusernamePUBG{
     transition: all 0.2s ease-in-out;
     border: none;
     background: none;
+}
+
+.txt_field_signusername2 input{
+    width : 425px;
+    height : 30px;
+    font-size: 16px;
+    border: 1px solid #cacaca;
+    border-radius: 3px;
 }
