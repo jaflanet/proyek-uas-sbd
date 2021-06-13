@@ -171,7 +171,7 @@ const SignUp = () => {
                         >
                         <Fade in={open2}>
                         <div className={classes.paper}>
-                        <SignUpPubg />
+                        <SignUpPubg/>
                         </div>
                         </Fade>
                     </Modal>

@@ -40,7 +40,7 @@ const SignUpML = () => {
     const [usernameweb, setUsernameweb] = useState()
 
         const getRequest = async () => {
-            await axios.post("https://backend-findmates.herokuapp.com/ML", 
+            await axios.post("http://localhost:6970/ML/", 
               {
                 id : id,
                 usernameml : usernameml,

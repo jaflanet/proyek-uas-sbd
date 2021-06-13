@@ -42,15 +42,9 @@ const SignUpPubg = () => {
                 usernamepubg : usernamepubg,
                 role : role,
                 rank : rank,
-                usernameweb : usernameweb
-
-              }
+                usernameweb : usernameweb}
               ).then(
-                  alert('Data berhasil disimpan')
-                  
-
-              ).then(
-                  window.location= "http://localhost:3000/"
+                  alert('Data berhasil disimpan'),
               )
               }
 
