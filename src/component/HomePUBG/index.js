@@ -64,7 +64,7 @@ const HomePUBG= () => {
         let tootle = true;
 
         const fetchData = async () => {
-            const response = await axios.get("http://localhost:6970/teamPUBG/")
+            const response = await axios.get("https://backend-findmates.herokuapp.com/teamPUBG/")
             if(tootle){
                 // console.log(response.data)
                 setResultsss(response.data)

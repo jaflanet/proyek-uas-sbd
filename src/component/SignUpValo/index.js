@@ -55,7 +55,7 @@ const SignUpValo = () => {
     const [usernameweb, setUsernameweb] = useState() 
 
         const getRequest = async () => {
-              const response = await axios.post("http://localhost:6970/valo/", 
+                await axios.post("https://backend-findmates.herokuapp.com/valo/", 
               {
                 iddantag : iddantag,
                 rank : rank,

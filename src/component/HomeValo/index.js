@@ -63,7 +63,7 @@ const HomeValo= () => {
         let tootle = true;
 
         const fetchData = async () => {
-            const response = await axios.get("http://localhost:6970/teamValo/")
+            const response = await axios.get("https://backend-findmates.herokuapp.com/teamValo/")
             if(tootle){
                 // console.log(response.data)
                 setResultsss(response.data)

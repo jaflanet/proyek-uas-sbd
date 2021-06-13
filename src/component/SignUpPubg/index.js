@@ -37,7 +37,7 @@ const SignUpPubg = () => {
     const [usernameweb, setUsernameweb] = useState()
 
         const getRequest = async () => {
-               await axios.post("http://localhost:6970/PUBG/", 
+               await axios.post("https://backend-findmates.herokuapp.com/PUBG", 
               {
                 usernamepubg : usernamepubg,
                 role : role,

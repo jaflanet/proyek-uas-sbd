@@ -64,7 +64,7 @@ const HomeML= () => {
         let tootle = true;
 
         const fetchData = async () => {
-            const response = await axios.get("http://localhost:6970/teamML/")
+            const response = await axios.get("https://backend-findmates.herokuapp.com/teamML/")
             if(tootle){
                 // console.log(response.data)
                 setResultsss(response.data)
