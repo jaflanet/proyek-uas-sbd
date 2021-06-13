@@ -1,24 +1,27 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './index.css'
 import Select from 'react-select'
+import axios from 'axios';
 
 const rankML_options = [
-    { value: 'Conqueror', label: 'Conqueror'},
-    { value: 'Ace', label: 'Ace'},
-    { value: 'Crown', label: 'Crown'},
-    { value: 'Diamond', label: 'Diamond'},
-    { value: 'Platinum', label: 'Platinum'},
-    { value: 'Gold', label: 'Gold'}, 
-    { value: 'Silver', label: 'Silver'}, 
-    { value: 'Bronze', label: 'Bronze'}
+        { value: 'Warrior', label: 'Warrior'},
+        { value: 'Elite', label: 'Elite'},
+        { value: 'Master', label: 'Master'},
+        { value: 'Grandmaster', label: 'Grandmaster'},
+        { value: 'Epic', label: 'Epic'},
+        { value: 'Legend', label: 'Legend'},
+        { value: 'Mythic', label: 'Mythic'},
+        { value: 'Mythical Glory', label: 'Mythical Glory'}
+  
 ]
 
 const roleML_options = [
-    { value: 'Rusher', label: 'Rusher'},
-    { value: 'Scout', label: 'Scout'},
+    { value: 'Assasin', label: 'Assasin'},
+    { value: 'Fighter', label: 'Fighter'},
+    { value: 'Mage', label: 'Mage'},
+    { value: 'Marksman', label: 'Marksman'},
     { value: 'Initiator', label: 'Initiator'},
-    { value: 'Support', label: 'Support'},
-    { value: 'Sniper', label: 'Sniper'}
+    { value: 'Tank', label: 'Tank'}
 ]
 
 const customStyles = {
@@ -30,6 +33,31 @@ const customStyles = {
   };
 
 const SignUpML = () => {
+    const [id, setId] = useState()
+    const [usernameml, setUsernameml] = useState()
+    const [role, setRole] = useState()
+    const [rank, setRank] = useState()
+    const [usernameweb, setUsernameweb] = useState()
+
+        const getRequest = async () => {
+              const response = await axios.post("http://localhost:6970/ML/", 
+              {
+                id : id,
+                usernameml : usernameml,
+                role : role,
+                rank : rank,
+                usernameweb : usernameweb
+
+              }
+              ).then(
+                  alert('Data berhasil disimpan')
+                //   console.log('sukses')
+
+              ).then(
+                  window.location= "http://localhost:3000/"
+              )
+              }
+
     return (
         <>
             <div className="modalBox">
@@ -37,11 +65,11 @@ const SignUpML = () => {
                 <form method="post">
                     <div className="txt_field_signidML">
                         <label className="idlabelML">ID</label>
-                        <input type="text" required/>
+                        <input type="text" required onChange={(e) => setId(e.target.value)}/>
                     </div>
                     <div className="txt_field_usernameML">
-                        <label className="usernameingamelabelML">InGameUsername</label>
-                        <input type="text" required/>
+                        <label className="usernameingamelabelML">Username InGame</label>
+                        <input type="text" required onChange={(e) => setUsernameml(e.target.value)}/>
                     </div>
                     <div className="txt_field_signML">
                         <label>RANK</label>
@@ -49,6 +77,7 @@ const SignUpML = () => {
                         options={rankML_options}
                         styles={customStyles}
                         isSearchable={true}
+                        onChange={(event) => setRank(event.value)}
                         />
                     </div>
                     <div className="txt_field_signML">
@@ -57,14 +86,15 @@ const SignUpML = () => {
                         options={roleML_options}
                         styles={customStyles}
                         isSearchable={true}
+                        onChange={(event) => setRole(event.value)}
                         />
                     </div>
                     <div className="txt_field_signusernameML">
                         <label className="usernamelabelML">USERNAME</label> 
-                        <input type="text" required/>
+                        <input type="text" required onChange={(e) => setUsernameweb(e.target.value)}/>
                     </div>
                     <div className="submitButton_signML">
-                        <button type="button">
+                        <button type="button" onClick={() => getRequest()}>
                             <img src="https://i.ibb.co/M8bpJzM/Component-2.png" alt="submit" />  
                         </button>
                     </div>
